@@ -1,14 +1,32 @@
 # Workflow Discipline
 
-Il workflow rende il processo verificabile.
+## Cosa significa
 
-Pipeline consigliata:
+Usare il workflow come memoria operativa del lavoro.
 
-`requisito -> analisi -> architettura -> task -> implementazione -> validazione -> documentazione`
+## Perche serve
 
-Regole:
+Permette continuita tra persone, sessioni e agenti.
 
-- un task alla volta
-- dipendenze esplicite
-- criterio di completamento per task
-- quality gate a fine iterazione
+## Come usarlo con un agente
+
+Segui la pipeline:
+
+`requisito -> analisi -> architettura -> task -> implementazione -> quality gate -> doc alignment`
+
+## Esempio pratico
+
+Applica il flusso al case study in `workflow/requirements/r2a-learn-auth-iam-case-study/00-master-requirement.md`.
+
+## Errori comuni
+
+- nessun task breakdown
+- dipendenze implicite
+- tracker non aggiornato
+
+## Checklist
+
+- task ordinati
+- dipendenze dichiarate
+- DoD per task
+- stato tracker aggiornato

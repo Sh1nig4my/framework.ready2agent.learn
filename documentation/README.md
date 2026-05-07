@@ -15,9 +15,10 @@ La cartella `documentation/` e il cuore didattico di Ready2Agent Learn. Qui non 
 ## Struttura della documentazione
 
 - `quickstart/`: guide di ingresso per profili diversi
-- `method/`: principi del metodo Ready2Agent Learn
+- `method/`: principi operativi con checklist
+- `examples/`: confronti bad vs good
 - `case-study/`: materiale del caso studio Auth/IAM
-- `project-meta/`: governance e split pubblico/privato
+- `project-meta/`: governance e confine pubblico/privato
 - `R2A_LEARN_full-ai-context.md`: contesto operativo completo per agenti
 
 ## Percorso consigliato per non tecnici

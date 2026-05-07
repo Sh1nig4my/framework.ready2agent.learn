@@ -1,13 +1,36 @@
 # Agent-Native Development
 
-Sviluppare in modalita agent-native significa fornire all'agente un contesto sufficiente per decidere correttamente.
+## Cosa significa
 
-Elementi minimi:
+Lavorare con un coding agent come parte del processo, non come scorciatoia casuale.
 
-- requisito di riferimento
-- vincoli espliciti
-- scope e out-of-scope
-- struttura repository
+## Perche serve
+
+Senza metodo, l'agente velocizza errori e incoerenze.
+
+## Come usarlo con un agente
+
+Prima del codice, fornisci:
+
+- requisito
+- vincoli
+- scope/out-of-scope
+- file coinvolti
 - quality gate
 
-Senza questi elementi l'agente tende a introdurre drift e feature non richieste.
+## Esempio pratico
+
+Usa `prompts/00-agent-onboarding.md` prima di ogni task operativo.
+
+## Errori comuni
+
+- partire direttamente da "scrivi codice"
+- non definire confini
+- non validare output
+
+## Checklist
+
+- contesto letto
+- task unico
+- output atteso
+- quality gate previsti

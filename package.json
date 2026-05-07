@@ -1,13 +1,15 @@
 {
   "name": "ready2agent-learn",
-  "version": "0.7.0",
+  "version": "1.0.0",
   "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "check:structure": "node scripts/check-structure.mjs",
+    "quality": "npm run lint && npm run build && npm run typecheck && npm run check:structure"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.2.1",

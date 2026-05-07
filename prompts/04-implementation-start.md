@@ -42,7 +42,7 @@ npm run typecheck
 
 - scope rispettato
 - nessun side effect inatteso
-- docs aggiornate quando necessario
+- documentazione aggiornata quando necessario
 
 ## Errori comuni
 

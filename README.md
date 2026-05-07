@@ -2,84 +2,80 @@
 
 ## In una frase
 
-Ready2Agent Learn e un laboratorio open-source per imparare a guidare agenti di coding con metodo, contesto, prompt, workflow e validazione.
+Ready2Agent Learn e un laboratorio open-source per imparare a progettare, guidare e validare il lavoro con coding agent attraverso metodo, prompt, workflow, esercizi, playground e quality gate.
 
 ## Perche esiste
 
-Molte persone usano i coding agent con richieste vaghe, isolate e difficili da verificare. Il risultato e spesso confuso: codice non allineato, decisioni non tracciate, documentazione incompleta e correzioni continue.
+Un coding agent senza metodo accelera il caos. Un coding agent guidato accelera il prodotto.
 
-Ready2Agent Learn nasce per insegnare un processo pratico:
+Ready2Agent Learn nasce per insegnarti un processo verificabile:
 
-`idea -> requisito -> contesto -> prompt -> workflow -> task -> implementazione -> quality gate -> documentazione`
+`idea -> requisito -> contesto -> prompt -> task -> implementazione -> quality gate -> documentazione`
 
-Non promette magia. Insegna disciplina eseguibile.
+Non chiedere solo codice. Progetta il contesto che genera buon codice.
 
-## Cosa imparerai
+## Cosa puoi fare subito
 
-- trasformare un'idea in un requisito utile per persone e agenti
-- scrivere prompt che danno confini chiari e output verificabili
-- spezzare lavori grandi in task piccoli e governabili
-- usare il workflow come memoria del processo
-- evitare drift tra codice e documentazione
-- validare il lavoro con quality gate ripetibili
-- ragionare su ruoli, permessi e policy server-side tramite il caso Auth/IAM
+### 5 minuti - Prova un prompt playground
 
-## Per chi e
+Apri `playground/README.md`, scegli uno scenario e copia un prompt pronto.
 
-| Profilo | Perche puo usarlo | Da dove iniziare |
-|---|---|---|
-| Persona non tecnica | Vuole capire metodo e processo senza partire dal codice | `documentation/quickstart/non_technical_start_here.md` |
-| Junior developer | Vuole imparare disciplina progettuale con esempi concreti | `documentation/quickstart/human_start_here.md` |
-| Developer esperto | Vuole standardizzare il lavoro con agenti | `documentation/method/README.md` + `prompts/README.md` |
-| Coding agent | Deve lavorare con contesto e vincoli espliciti | `documentation/R2A_LEARN_full-ai-context.md` |
-| Founder/consulente | Vuole trasformare idee in flussi eseguibili | `workflow/README.md` + requirement master |
+### 30 minuti - Crea una mini landing guidata
 
-## Cosa contiene
+Segui `playground/01-company-to-landing-page.md` e genera una struttura pagina con CTA, sezioni e checklist.
 
-La landing pubblica racconta il metodo in modo accessibile. La cartella `documentation/` e l'hub formativo. `workflow/` contiene il percorso didattico del caso studio e mostra come organizzare un lavoro complesso senza perdere controllo. `prompts/` include i prompt principali per guidare un agente fase per fase, mentre `prompts/workflow-maintenance/` contiene strumenti specifici per mantenere ordinato il processo nel tempo.
+### 1 ora - Trasforma un'idea in requisito e prompt
 
-In `src/` trovi uno skeleton Next.js intenzionale: non un prodotto pronto, ma una struttura che insegna dove collocare responsabilita, contratti e componenti durante un'implementazione guidata.
+Usa `playground/02-chaotic-idea-to-requirement.md` e poi `playground/04-business-context-to-agent-prompt.md`.
 
-## Cosa non contiene
+### 2 ore - Esegui un primo workflow completo
 
-- non contiene la versione enterprise completa
-- non contiene dashboard privata pronta
-- non contiene Auth/IAM completo gia implementato
-- non contiene moduli business reali
-- non contiene codice cliente
-- non e uno starter production-ready immediato
+Apri `workflow/README.md` e poi passa al case study in `workflow/requirements/r2a-learn-auth-iam-case-study/00-master-requirement.md`.
 
-## Come iniziare senza scrivere codice
+## Scegli il tuo percorso
 
-1. leggi questo `README.md`
-2. apri `documentation/quickstart/non_technical_start_here.md`
-3. visita la landing locale (`npm run dev`) e leggi le sezioni
-4. leggi `documentation/method/README.md`
-5. leggi il master requirement in `workflow/requirements/r2a-learn-auth-iam-case-study/00-master-requirement.md`
-6. copia il prompt di avvio in `prompts/README.md`
-7. chiedi all'agente di spiegarti il piano prima di implementare
+- Non tecnico: `documentation/quickstart/non_technical_start_here.md`
+- Founder / consulente: `documentation/quickstart/human_start_here.md` + `workflow/README.md`
+- Junior developer: `exercises/README.md` livello 1 -> livello 2
+- Developer esperto: `documentation/method/README.md` + `prompts/README.md`
+- Coding agent: `documentation/R2A_LEARN_full-ai-context.md` + `documentation/quickstart/agent_start_here.md`
+- Docente / formatore: `TEACHING_GUIDE.md`
 
-## Come iniziare come sviluppatore
+## Playground: prova subito
 
-```bash
-npm install
-npm run dev
-```
+Il playground e la zona a frizione minima: input rapidi, prompt pronti, output attesi chiari.
 
-Poi:
+- Hub playground: `playground/README.md`
+- Prompt 1: `playground/01-company-to-landing-page.md`
+- Prompt 2: `playground/02-chaotic-idea-to-requirement.md`
+- Prompt 3: `playground/03-feature-to-codex-plan.md`
 
-- leggi `documentation/quickstart/human_start_here.md`
-- leggi `documentation/method/README.md`
-- leggi `workflow/README.md`
-- usa i prompt in `prompts/`
+## Esercizi progressivi
 
-## Come iniziare con un coding agent
+Qui smetti di consumare output in modo passivo e inizi a prendere decisioni.
 
-- apri `prompts/README.md`
-- copia il prompt standard di avvio
-- fai leggere all'agente `documentation/R2A_LEARN_full-ai-context.md`
-- usa i prompt principali in sequenza
-- usa `prompts/workflow-maintenance/` quando lavori su requisiti/workflow/tracking
+- Hub esercizi: `exercises/README.md`
+- Tracker: `exercises/tracker.md`
+- Livelli: foundations -> workflow -> practical builds -> case study
+
+## Case study Auth/IAM
+
+Il case study Auth/IAM e la sfida seria del laboratorio: policy, ruoli, permessi, task breakdown, quality gate.
+
+- Requirement master: `workflow/requirements/r2a-learn-auth-iam-case-study/00-master-requirement.md`
+- Tracker dedicato: `workflow/trackers/auth-iam-case-study-tracker.md`
+
+## Come usare Codex/OpenCode
+
+1. Leggi `prompts/README.md`.
+2. Copia `prompts/00-agent-onboarding.md`.
+3. Fai leggere all'agente `documentation/R2A_LEARN_full-ai-context.md`.
+4. Esegui i prompt `00` -> `06` in ordine.
+5. Se il task e sul processo, usa `prompts/workflow-maintenance/`.
+
+## Teaching guide
+
+Se usi Learn in aula, workshop o mentoring, apri `TEACHING_GUIDE.md`.
 
 ## Quality gate
 
@@ -87,17 +83,55 @@ Poi:
 npm run lint
 npm run build
 npm run typecheck
+npm run check:structure
+npm run quality
 ```
 
-## Consulenza
+Se l'output non e verificabile, il task non e finito.
 
-Ready2Agent Learn e pubblico e gratuito. Se vuoi applicare il metodo a un progetto reale, a un team o a un prodotto enterprise, puoi richiedere una consulenza:
+## Mappa del repository
+
+- `documentation/`: metodo, quickstart, esempi, project meta
+- `playground/`: prompt immediati per primi risultati
+- `exercises/`: percorso progressivo con tracker
+- `workflow/`: requisito master e tracker di avanzamento
+- `prompts/`: prompt principali e workflow-maintenance
+- `src/`: landing e skeleton didattico frontend
+
+## Cosa NON e
+
+Ready2Agent Learn v1.0.0:
+
+- non e un backend framework enterprise pronto
+- non include database reale
+- non include MongoDB o Mongoose
+- non include NextAuth
+- non include login/register production-ready
+- non include moduli business reali o codice cliente
+
+E un prodotto didattico open-source autonomo.
+
+## Public/private boundary
+
+Il confine tra Learn pubblico e runtime privato Ready2Agent e esplicitato in:
+
+`documentation/project-meta/public-private-boundary.md`
+
+## Contribuire
+
+Contribuisci con esercizi, esempi, miglioramenti di chiarezza, quality gate documentali e miglioramenti della landing coerenti con il metodo.
+
+Prima di aprire una PR:
+
+- Apri `documentation/project-meta/release-definition-v1.md`
+- Apri `documentation/project-meta/public-private-boundary.md`
+- Apri `documentation/project-meta/editorial-style-guide.md`
+
+## Consulenza (opzionale)
+
+Ready2Agent Learn resta gratuito e open-source. Se vuoi applicare il metodo su un team o prodotto reale:
 
 https://emanueleienna.dev/consultant/form-request
-
-## Repository pubblico
-
-https://github.com/Sh1nig4my/framework.ready2agent.learn
 
 ## Licenza
 

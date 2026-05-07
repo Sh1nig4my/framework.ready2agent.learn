@@ -27,6 +27,8 @@ workflow/
   README.md
   requirements/
     r2a-learn-auth-iam-case-study/
+  trackers/
+    auth-iam-case-study-tracker.md
 ```
 
 ## Caso studio presente
@@ -53,3 +55,7 @@ Il workflow attuale ruota intorno al caso Auth/IAM didattico. L'obiettivo non e 
 ## Relazione con prompts/workflow-maintenance
 
 `workflow/` contiene la memoria del processo. `prompts/workflow-maintenance/` contiene gli strumenti per crearla, mantenerla e verificarla.
+
+## Tracker
+
+Per tracciare stato, decisioni e rischi usa `workflow/trackers/auth-iam-case-study-tracker.md`.

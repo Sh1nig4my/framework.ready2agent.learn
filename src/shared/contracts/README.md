@@ -26,4 +26,4 @@ Nel lavoro con agenti, i contratti espliciti riducono misunderstanding e regress
 
 ## Come aiuta un coding agent
 
-Offre una fonte unica di verita per i payload, semplificando generazione codice e allineamento docs.
+ Offre una fonte unica di verita per i payload, semplificando generazione codice e allineamento documentazione.

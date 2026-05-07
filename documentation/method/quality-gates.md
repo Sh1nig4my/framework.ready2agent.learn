@@ -1,11 +1,35 @@
 # Quality Gates
 
-I quality gate standard di Ready2Agent Learn sono:
+## Cosa significa
+
+Verifiche minime obbligatorie prima di dichiarare un task completato.
+
+## Perche serve
+
+Riduce regressioni, drift strutturale e documentazione non allineata.
+
+## Come usarlo con un agente
+
+Esegui sempre:
 
 - `npm run lint`
 - `npm run build`
 - `npm run typecheck`
+- `npm run check:structure`
 
-Se presenti test reali nel perimetro corrente, aggiungere anche i test.
+## Esempio pratico
 
-Ogni task concluso deve riportare esito dei gate e eventuali fix applicati.
+Dopo una modifica su landing o documentazione, esegui `npm run quality` e registra esito nel tracker.
+
+## Errori comuni
+
+- saltare gate dopo piccole modifiche
+- non documentare fallimenti
+- ignorare gate strutturali
+
+## Checklist
+
+- gate eseguiti
+- output registrato
+- fix applicati se fail
+- documentazione aggiornata dopo fix

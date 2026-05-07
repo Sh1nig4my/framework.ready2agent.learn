@@ -596,3 +596,78 @@ li { margin-top: 0.35rem; }
 @media (min-width: 1240px) {
   .path-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
+
+.r2a-page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.r2a-card {
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--bg-panel);
+  padding: 1.1rem;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.r2a-card h1 {
+  font-size: clamp(1.9rem, 4.2vw, 3rem);
+  line-height: 1.1;
+}
+
+.r2a-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.r2a-btn {
+  border: 1px solid var(--line);
+  border-radius: 0.65rem;
+  padding: 0.55rem 0.9rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  background: #fff;
+  width: fit-content;
+}
+
+.r2a-btn-primary {
+  background: var(--bg-strong);
+  border-color: var(--bg-strong);
+  color: #fff;
+}
+
+.r2a-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.r2a-subcard {
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+  padding: 0.8rem;
+  display: grid;
+  gap: 0.5rem;
+  background: #fff;
+}
+
+.r2a-badge {
+  display: inline-block;
+  background: #efe9d8;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  width: fit-content;
+}
+
+@media (width <= 860px) {
+  .r2a-grid {
+    grid-template-columns: 1fr;
+  }
+}

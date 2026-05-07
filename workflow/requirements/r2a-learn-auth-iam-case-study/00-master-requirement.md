@@ -198,7 +198,7 @@ Auth/IAM e ideale per imparare perche:
 ### Fase 9 - documentazione
 - obiettivo: allineamento finale
 - input: codice + workflow
-- output: docs aggiornate senza drift
+- output: documentazione aggiornata senza drift
 - prompt consigliato: `06-documentation-alignment.md`
 - criterio completamento: link e contenuto coerenti
 
@@ -220,4 +220,4 @@ Auth/IAM e ideale per imparare perche:
 4. breakdown task con `prompts/03-task-breakdown.md`
 5. implementazione incrementale con `prompts/04-implementation-start.md`
 6. validazione con `prompts/05-quality-gate.md`
-7. riallineamento docs con `prompts/06-documentation-alignment.md`
+7. riallineamento documentazione con `prompts/06-documentation-alignment.md`

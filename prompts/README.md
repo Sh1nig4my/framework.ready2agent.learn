@@ -2,7 +2,15 @@
 
 ## Perche esiste questa cartella
 
-I prompt di Ready2Agent Learn sono strumenti operativi per guidare agenti di coding. Non sono frasi magiche e non sostituiscono il pensiero architetturale: servono a fornire contesto, vincoli, output atteso e criteri di validazione.
+I prompt sono strumenti operativi. Ogni prompt deve dire ruolo, input, output e controlli.
+
+## Relazione con playground
+
+Il playground ti da il primo risultato rapido. I prompt `00-06` trasformano quel risultato in processo controllato.
+
+## Relazione con exercises
+
+Gli esercizi richiedono uso disciplinato dei prompt e aggiornamento tracker.
 
 ## Come usare i prompt
 
@@ -12,21 +20,30 @@ I prompt di Ready2Agent Learn sono strumenti operativi per guidare agenti di cod
 4. verifica l'output rispetto a checklist e confini
 5. passa al prompt successivo solo quando il risultato e chiaro
 
-## Tabella dei prompt principali
+## Quando usare i prompt principali 00-06
 
 | Prompt | Quando usarlo | Cosa produce | Input consigliati | Output atteso |
 |---|---|---|---|---|
-| `00-agent-onboarding.md` | Inizio lavoro | piano operativo iniziale | README + full context | scope, rischi, piano |
-| `01-requirement-analysis.md` | Dopo onboarding | comprensione del requisito | requirement master | summary, assunzioni, rischi |
-| `02-architecture-planning.md` | Dopo analisi | architettura target | analisi + docs method | layer, confini API, modello |
-| `03-task-breakdown.md` | Dopo architettura | lista task eseguibili | architettura + requirement | task ordinati, dipendenze, DoD |
-| `04-implementation-start.md` | Fase esecutiva | modifica di un task | task corrente + file target | codice + riepilogo tecnico |
-| `05-quality-gate.md` | Fine iterazione | verifica tecnica | diff + docs aggiornate | esito gate + piano fix |
-| `06-documentation-alignment.md` | Dopo validazione | docs coerenti | codice + workflow + README | docs riallineate |
+| `00-agent-onboarding.md` | Avvio sessione | piano operativo | source-of-truth | scope + rischi + piano |
+| `01-requirement-analysis.md` | Analisi richiesta | requirement chiarito | requirement/input business | obiettivo + confini + rischi |
+| `02-architecture-planning.md` | Prima dei task | piano architettura | analisi + metodo | confini + componenti + trade-off |
+| `03-task-breakdown.md` | Prima del codice | backlog task | architettura + requisito | task + dipendenze + DoD |
+| `04-implementation-start.md` | Task in corso | implementazione scoped | task + file target | cambi + motivazione + check |
+| `05-quality-gate.md` | Fine iterazione | validazione | diff + output comandi | pass/fail + fix plan |
+| `06-documentation-alignment.md` | Chiusura ciclo | documentazione allineata | codice + workflow | aggiornamenti coerenti |
 
 ## Sequenza consigliata
 
 Onboarding -> Requirement Analysis -> Architecture Planning -> Task Breakdown -> Implementation -> Quality Gate -> Documentation Alignment
+
+## Quando usare workflow-maintenance
+
+Usa `prompts/workflow-maintenance/` quando il task riguarda:
+
+- generazione capitoli workflow
+- generazione backlog da requirement
+- aggiornamento tracker
+- review consistenza requirement/workflow/documentazione
 
 ## Prompt standard di avvio
 
@@ -110,3 +127,16 @@ Output:
 - ignorare quality gate
 - non aggiornare documentazione
 - non definire output atteso
+
+## Come valutare output
+
+- e coerente con requirement e scope?
+- e verificabile con gate?
+- lascia traccia di decisioni e rischi?
+
+## Cosa fare prima di implementare
+
+1. chiarire requirement
+2. definire task breakdown
+3. confermare vincoli
+4. dichiarare quality gate

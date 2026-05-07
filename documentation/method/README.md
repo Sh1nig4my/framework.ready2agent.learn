@@ -1,21 +1,20 @@
 # Metodo Ready2Agent Learn
 
-Il metodo Ready2Agent Learn non e una teoria astratta: e una pratica operativa per lavorare con agenti di coding senza perdere controllo del risultato.
+Il metodo e una disciplina operativa: non elimina la complessita, ti insegna a governarla.
 
-## Le sei idee chiave
+## Percorso consigliato
 
-1. **Contesto prima del codice**: senza contesto l'agente produce output fragili.
-2. **Prompt operativi**: ogni prompt deve avere obiettivo e output verificabile.
-3. **Workflow come memoria**: decisioni e task devono lasciare traccia.
-4. **Task incrementali**: piccoli passi riducono errori e regressioni.
-5. **Quality gate**: validazione tecnica non opzionale.
-6. **Documentazione allineata**: il codice senza docs aggiornate genera drift.
+1. `agent-native-development.md`
+2. `requirement-discipline.md`
+3. `prompt-discipline.md`
+4. `workflow-discipline.md`
+5. `quality-gates.md`
+6. `documentation-alignment.md`
 
-## Documenti della sezione
+## Come usare questa sezione
 
-- `agent-native-development.md`
-- `workflow-discipline.md`
-- `prompt-driven-implementation.md`
-- `quality-gates.md`
+- leggi un documento
+- applicalo su un playground o esercizio
+- aggiorna tracker con errori e correzioni
 
-Leggili in ordine: ogni documento prepara il successivo.
+Non studiare la teoria in isolamento: applicala sempre su output reali.

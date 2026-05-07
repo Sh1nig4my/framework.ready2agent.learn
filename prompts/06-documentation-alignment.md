@@ -48,7 +48,7 @@ Documentazione coerente, chiara e senza link rotti.
 
 ## Errori comuni
 
-- aggiornare solo codice e non docs
+- aggiornare solo codice e non documentazione
 - lasciare quickstart incoerenti con workflow
 
 ## Passaggio successivo

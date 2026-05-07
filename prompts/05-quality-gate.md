@@ -24,6 +24,7 @@ Comandi obbligatori:
 - npm run lint
 - npm run build
 - npm run typecheck
+- npm run check:structure
 
 Se ci sono errori:
 - elenca cause

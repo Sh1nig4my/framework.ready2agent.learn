@@ -50,7 +50,7 @@ Nel repository Learn non vanno reintrodotte dashboard private, runtime auth comp
 - il workflow e memoria ordinata del lavoro
 - ogni fase deve essere verificabile
 - i task devono essere piccoli e dipendenti in modo esplicito
-- requirement, prompt, task e docs devono restare coerenti
+- requirement, prompt, task e documentazione devono restare coerenti
 
 ## Regole per agenti
 
@@ -58,7 +58,7 @@ Nel repository Learn non vanno reintrodotte dashboard private, runtime auth comp
 - produrre piano operativo prima delle modifiche
 - non implementare fuori scope
 - non introdurre feature non richieste
-- aggiornare docs insieme al codice
+- aggiornare documentazione insieme al codice
 - eseguire quality gate
 
 ## Cosa non reintrodurre
