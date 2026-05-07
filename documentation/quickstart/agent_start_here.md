@@ -7,10 +7,13 @@ Questa guida definisce il comportamento atteso per un coding agent che lavora su
 1. leggi `AGENTS.md`
 2. leggi `README.md`
 3. leggi `documentation/R2A_LEARN_full-ai-context.md`
-4. leggi `prompts/README.md`
-5. leggi `workflow/README.md`
-6. leggi il requirement master
-7. identifica se il task e di implementazione o workflow maintenance
+4. leggi `workflow/README.md`
+5. leggi `prompts/README.md`
+6. leggi `.agents/skills/README.md`
+7. leggi `.agents/skills/READY2AGENT_LEARN_ADAPTER.md`
+8. leggi `.agents/skills/ready2agent-learn-core/SKILL.md`
+9. leggi il requirement master
+10. identifica se il task e di implementazione o workflow maintenance
 
 ## Distinzione operativa fondamentale
 
@@ -24,6 +27,7 @@ Questa guida definisce il comportamento atteso per un coding agent che lavora su
 - non inventare feature fuori scope
 - implementare un task alla volta
 - mantenere documentazione allineata
+- mantenere skills leggere e modificabili
 
 ## Quality gate obbligatori
 

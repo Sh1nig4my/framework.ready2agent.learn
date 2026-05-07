@@ -18,11 +18,14 @@ Gli esercizi di Learn non servono a produrre output "belli". Servono a prendere 
 
 ## Come usare Codex/OpenCode
 
-1. Avvia con `prompts/00-agent-onboarding.md`.
-2. Leggi l'esercizio selezionato.
-3. Usa il prompt consigliato dell'esercizio.
-4. Valida l'output con i criteri indicati.
-5. Aggiorna il tracker.
+1. Leggi `.agents/skills/README.md`.
+2. Leggi `.agents/skills/READY2AGENT_LEARN_ADAPTER.md`.
+3. Leggi `.agents/skills/ready2agent-learn-core/SKILL.md`.
+4. Avvia con `prompts/00-agent-onboarding.md`.
+5. Leggi l'esercizio selezionato.
+6. Usa il prompt consigliato dell'esercizio.
+7. Valida l'output con i criteri indicati.
+8. Aggiorna il tracker.
 
 ## Come aggiornare `tracker.md`
 

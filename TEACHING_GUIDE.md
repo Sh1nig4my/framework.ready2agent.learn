@@ -63,9 +63,16 @@ Consegna finale:
 Regole pratiche:
 
 - l'agente legge prima i source-of-truth
+- l'agente legge anche le skills didattiche in `.agents/skills/`
 - il gruppo definisce il task prima del prompt
 - ogni output viene valutato con criteri espliciti
 - requisito, task e documentazione restano allineati
+
+Sequenza skills-first consigliata prima dei prompt:
+
+1. `.agents/skills/README.md`
+2. `.agents/skills/READY2AGENT_LEARN_ADAPTER.md`
+3. `.agents/skills/ready2agent-learn-core/SKILL.md`
 
 Sequenza raccomandata:
 

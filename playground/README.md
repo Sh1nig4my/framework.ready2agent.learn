@@ -6,6 +6,12 @@ Il playground e la zona di prova immediata di Ready2Agent Learn. Qui trovi promp
 
 ## Come usarlo con ChatGPT, Codex, OpenCode o altri agenti
 
+Prima di usare i prompt playground con OpenCode, carica il contesto skills-first:
+
+1. `.agents/skills/README.md`
+2. `.agents/skills/READY2AGENT_LEARN_ADAPTER.md`
+3. `.agents/skills/ready2agent-learn-core/SKILL.md`
+
 1. Scegli uno scenario.
 2. Compila gli input richiesti.
 3. Copia il prompt pronto.

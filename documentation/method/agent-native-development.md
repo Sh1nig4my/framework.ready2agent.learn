@@ -20,7 +20,13 @@ Prima del codice, fornisci:
 
 ## Esempio pratico
 
-Usa `prompts/00-agent-onboarding.md` prima di ogni task operativo.
+Prima leggi:
+
+- `.agents/skills/README.md`
+- `.agents/skills/READY2AGENT_LEARN_ADAPTER.md`
+- `.agents/skills/ready2agent-learn-core/SKILL.md`
+
+Poi usa `prompts/00-agent-onboarding.md` prima di ogni task operativo.
 
 ## Errori comuni
 

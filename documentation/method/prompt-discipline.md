@@ -10,6 +10,8 @@ Un prompt debole produce output difficile da validare.
 
 ## Come usarlo con un agente
 
+Parti sempre dalle skills didattiche in `.agents/skills/`.
+
 Usa sempre: ruolo, task, input, output, vincoli, quality check.
 
 ## Esempio pratico

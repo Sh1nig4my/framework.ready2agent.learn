@@ -38,11 +38,12 @@ Il workflow attuale ruota intorno al caso Auth/IAM didattico. L'obiettivo non e 
 ## Come usare il workflow con Codex
 
 1. leggi il master requirement
-2. usa i prompt di `prompts/workflow-maintenance/` per generare capitoli o task
-3. implementa con i prompt principali (`prompts/00` -> `06`)
-4. aggiorna stato e decisioni nel workflow
-5. valida con quality gate
-6. riallinea la documentazione
+2. carica le regole skills da `.agents/skills/`
+3. usa i prompt di `prompts/workflow-maintenance/` per generare capitoli o task
+4. implementa con i prompt principali (`prompts/00` -> `06`)
+5. aggiorna stato e decisioni nel workflow
+6. valida con quality gate
+7. riallinea la documentazione
 
 ## Errori comuni
 

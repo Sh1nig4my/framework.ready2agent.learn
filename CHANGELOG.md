@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.8.0 - Skills-First Learn Simplification
+
+- semplificata la struttura `.agents/skills/` in versione didattica leggera
+- introdotta skill core `ready2agent-learn-core` come riferimento principale
+- aggiunto `READY2AGENT_LEARN_ADAPTER.md` per traduzione operativo -> Learn
+- aggiornata documentazione con onboarding skills-first e setup OpenCode multi-OS
+- aggiunto `NOTICE.md` educativo allineato alla licenza MIT
+- rimossa la governance skills pesante non coerente con il repository Learn
+
 ## 0.7.0 - Ready2Agent Learn Educational Maturity Iteration
 
 - riscrittura del README principale con percorsi per non tecnici, developer e coding agent
