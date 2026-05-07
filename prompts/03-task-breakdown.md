@@ -1,38 +1,46 @@
-# 03 - Task Breakdown
+# Prompt 03 - Task Breakdown
 
-## Ruolo agente
+## A cosa serve
 
-Delivery planner orientato a esecuzione incrementale.
+Traduce architettura e requisito in task piccoli, ordinati e verificabili.
 
-## Contesto
+## Quando usarlo
 
-Architettura target approvata.
+- dopo architettura target
+- prima della prima modifica codice
 
-## Input da leggere
+## File da leggere prima
 
-- documento architettura
-- requisito master
+- output prompt 02
+- requirement master
 
-## Obiettivo
+## Prompt da copiare nell'agente
 
-Generare task eseguibili con dipendenze e criteri di completion.
+```text
+Trasforma l'architettura del caso studio Auth/IAM in task eseguibili.
 
-## Vincoli
-
-- task piccoli
-- ordine coerente
-
-## Output atteso
-
+Output richiesto:
 - lista task ordinata
 - dipendenze
 - criteri di completamento
 - quality gate per task
+```
 
-## Controlli finali
+## Output atteso
 
-- copertura totale dello scope
+Piano di esecuzione incrementale pronto per implementazione.
 
-## Cosa non fare
+## Checklist per l'umano
 
-- non mischiare task non correlati
+- task piccoli e indipendenti quando possibile
+- dipendenze dichiarate
+- criteri completion testabili
+
+## Errori comuni
+
+- task troppo grandi
+- mancanza criterio di completamento
+
+## Passaggio successivo
+
+Usa `04-implementation-start.md`.

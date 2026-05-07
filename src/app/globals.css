@@ -1,43 +1,598 @@
 @import "tailwindcss";
 
 :root {
-  --bg-base: #f6f4ef;
+  --bg-base: #f7f4ec;
   --bg-panel: #fffdf8;
   --bg-strong: #183a37;
   --text-primary: #18212f;
-  --text-muted: #56617a;
-  --line: #d9d4c7;
-  --accent: #d26a2e;
-  --accent-strong: #b14d14;
+  --text-muted: #5c677f;
+  --line: #d8d2c1;
+  --accent: #ca6833;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
 
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
+html { scroll-behavior: smooth; }
 
 body {
   font-family: var(--font-body), sans-serif;
-  background:
-    radial-gradient(circle at 10% 0%, rgba(210, 106, 46, 0.18), transparent 32%),
-    radial-gradient(circle at 90% 10%, rgba(24, 58, 55, 0.16), transparent 34%),
-    var(--bg-base);
   color: var(--text-primary);
+  background:
+    radial-gradient(circle at 8% 0%, rgba(202, 104, 51, 0.17), transparent 30%),
+    radial-gradient(circle at 92% 14%, rgba(24, 58, 55, 0.16), transparent 34%),
+    var(--bg-base);
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   font-family: var(--font-heading), sans-serif;
   letter-spacing: -0.02em;
+  margin: 0;
 }
 
-a {
-  color: inherit;
+p { margin: 0; line-height: 1.7; }
+ul, ol { margin: 0; padding-left: 1.1rem; color: var(--text-muted); line-height: 1.65; }
+li { margin-top: 0.35rem; }
+
+.wiki-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.wiki-nav-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  padding-top: 0.35rem;
+}
+
+.wiki-nav {
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg-panel) 90%, white);
+  backdrop-filter: blur(8px);
+  border-radius: 0.9rem;
+  padding: 0.7rem 0.9rem;
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wiki-brand {
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0;
+}
+
+.wiki-links {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.4rem;
+  overflow-x: auto;
+  padding-bottom: 0.15rem;
+}
+
+.wiki-links a {
+  white-space: nowrap;
+  text-decoration: none;
+  color: var(--text-muted);
+  border-radius: 0.65rem;
+  padding: 0.52rem 0.76rem;
+  font-size: 0.86rem;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid transparent;
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.wiki-links a:hover,
+.wiki-links a:focus-visible {
+  color: var(--text-primary);
+  border-color: var(--line);
+  outline: none;
+}
+
+.wiki-links a.is-active {
+  color: var(--text-primary);
+  border-color: var(--line);
+  background: #fff;
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--accent) 24%, transparent);
+}
+
+.wiki-layout {
+  display: grid;
+  gap: 1rem;
+}
+
+.wiki-content {
+  display: grid;
+  gap: 1rem;
+}
+
+.wiki-toc {
+  display: none;
+}
+
+.wiki-toc-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.wiki-toc a {
+  text-decoration: none;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+  border-radius: 0.6rem;
+  padding: 0.4rem 0.55rem;
+  font-size: 0.88rem;
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.wiki-toc a:hover,
+.wiki-toc a:focus-visible,
+.wiki-toc a.is-active {
+  color: var(--text-primary);
+  border-color: var(--line);
+  background: #fff;
+  outline: none;
+}
+
+.wiki-back-top {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 40;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg-panel) 94%, white);
+  color: var(--text-primary);
+  border-radius: 999px;
+  padding: 0.52rem 0.85rem;
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.wiki-back-top.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.wiki-card {
+  scroll-margin-top: 5.4rem;
+  border: 1px solid var(--line);
+  background: var(--bg-panel);
+  border-radius: 1.1rem;
+  padding: 1.2rem;
+  display: grid;
+  gap: 0.95rem;
+}
+
+.wiki-card:target {
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 22%, transparent);
+}
+
+.wiki-hero h1 { font-size: clamp(2rem, 4.3vw, 3.4rem); line-height: 1.05; }
+.wiki-hero p { color: var(--text-muted); max-width: 72ch; }
+
+.wiki-badge {
+  display: inline-block;
+  width: fit-content;
+  background: #efe9d8;
+  border-radius: 999px;
+  padding: 0.25rem 0.65rem;
+  font-weight: 700;
+  font-size: 0.74rem;
+  text-transform: uppercase;
+}
+
+.wiki-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.2rem;
+}
+
+.wiki-btn {
+  border: 1px solid var(--line);
+  border-radius: 0.72rem;
+  padding: 0.62rem 0.96rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-primary);
+  background: white;
+  font-size: 0.92rem;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.wiki-btn:hover,
+.wiki-btn:focus-visible {
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.wiki-btn-primary {
+  background: var(--bg-strong);
+  color: white;
+  border-color: var(--bg-strong);
+}
+
+.wiki-btn-outline {
+  border-color: var(--accent);
+  color: #9a4419;
+}
+
+.value-card {
+  background:
+    radial-gradient(circle at top right, rgba(24, 58, 55, 0.08), transparent 34%),
+    var(--bg-panel);
+}
+
+.compare-card {
+  border-style: solid;
+}
+
+.pipeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.pipeline span {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 999px;
+  padding: 0.35rem 0.62rem;
+  font-size: 0.84rem;
+  color: var(--text-muted);
+}
+
+.wiki-muted { color: var(--text-muted); }
+
+.wiki-grid-2,
+.wiki-grid-3 {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.wiki-subcard {
+  border: 1px solid var(--line);
+  border-radius: 0.95rem;
+  background: #fff;
+  padding: 0.9rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.path-grid {
+  margin-top: 0.2rem;
+}
+
+.path-card {
+  grid-template-rows: auto auto auto 1fr auto;
+  min-height: 100%;
+  position: relative;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.path-card:hover,
+.path-card:focus-within {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--line));
+  box-shadow: 0 12px 24px rgba(24, 58, 55, 0.08);
+}
+
+.path-card.is-recommended {
+  border-color: color-mix(in srgb, var(--accent) 45%, var(--line));
+  background: linear-gradient(180deg, color-mix(in srgb, #fff2e8 55%, #fff) 0%, #fff 100%);
+}
+
+.path-recommended {
+  width: fit-content;
+  margin: 0;
+  padding: 0.2rem 0.52rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: #8a431a;
+  background: #f7e2d3;
+}
+
+.path-card li,
+.path-goal,
+.path-link {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.path-badge {
+  width: fit-content;
+  margin: 0;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: #efe9d8;
+  color: #70442b;
+}
+
+.path-goal {
+  color: var(--text-muted);
+  font-size: 0.94rem;
+}
+
+.path-audience {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.path-link {
+  margin-top: 0.2rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #1f3f66;
+  border: 1px solid transparent;
+  border-radius: 0.62rem;
+  padding: 0.48rem 0.64rem;
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  width: fit-content;
+}
+
+.path-link:hover,
+.path-link:focus-visible {
+  border-color: var(--line);
+  background: #fff;
+  outline: none;
+}
+
+.path-link-primary {
+  background: var(--bg-strong);
+  color: #fff;
+  border-color: var(--bg-strong);
+}
+
+.path-link-primary:hover,
+.path-link-primary:focus-visible {
+  background: color-mix(in srgb, var(--bg-strong) 90%, black);
+  border-color: color-mix(in srgb, var(--bg-strong) 90%, black);
+}
+
+.path-actions {
+  margin-top: 0.15rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.prompt-block {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.workflow-prompts-highlight {
+  border: 1px dashed color-mix(in srgb, var(--accent) 45%, var(--line));
+  border-radius: 0.95rem;
+  padding: 0.8rem;
+  background: color-mix(in srgb, #fff7ef 55%, #fff);
+}
+
+.workflow-prompt-cards {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.consultancy-card {
+  border-color: color-mix(in srgb, var(--accent) 52%, var(--line));
+  background:
+    radial-gradient(circle at 100% 0%, rgba(202, 104, 51, 0.14), transparent 35%),
+    var(--bg-panel);
+}
+
+.consultancy-badge {
+  background: #f8e8dc;
+  color: #8a441d;
+}
+
+.consultancy-points {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.consultancy-points span {
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, var(--line));
+  border-radius: 0.7rem;
+  padding: 0.55rem 0.7rem;
+  background: #fff;
+  color: var(--text-primary);
+  font-size: 0.93rem;
+}
+
+.consultancy-btn {
+  justify-content: center;
+  width: 100%;
+}
+
+.consultancy-note {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.consultancy-card-large {
+  border-color: color-mix(in srgb, var(--accent) 55%, var(--line));
+  background:
+    radial-gradient(circle at 100% 0%, rgba(202, 104, 51, 0.16), transparent 40%),
+    radial-gradient(circle at 0% 100%, rgba(24, 58, 55, 0.08), transparent 38%),
+    var(--bg-panel);
+}
+
+.case-study-card {
+  border-color: color-mix(in srgb, var(--bg-strong) 45%, var(--line));
+}
+
+.wiki-subcard p { color: var(--text-muted); }
+
+.wiki-prompt-table {
+  border: 1px solid var(--line);
+  border-radius: 0.95rem;
+  overflow: hidden;
+}
+
+.wiki-row {
+  display: grid;
+  gap: 0.55rem;
+  grid-template-columns: 54px 1fr;
+  padding: 0.78rem 0.85rem;
+  border-top: 1px solid var(--line);
+  background: #fff;
+}
+
+.wiki-row:first-child { border-top: 0; }
+
+.wiki-col-id {
+  width: 42px;
+  height: 28px;
+  border-radius: 0.45rem;
+  background: #efe9d8;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 0.78rem;
+}
+
+.wiki-col-title { font-weight: 700; }
+.wiki-col-desc { grid-column: 1 / -1; color: var(--text-muted); font-size: 0.94rem; }
+
+.wiki-ordered {
+  color: var(--text-muted);
+  display: grid;
+  gap: 0.3rem;
+}
+
+@media (min-width: 780px) {
+  .wiki-page { padding: 1.4rem; gap: 1.1rem; }
+  .wiki-nav { padding: 0.78rem 1rem; }
+  .wiki-links a { font-size: 0.86rem; }
+  .wiki-card { padding: 1.45rem; gap: 1rem; }
+  .wiki-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .wiki-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .path-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .wiki-row { grid-template-columns: 54px 220px 1fr; align-items: center; }
+  .wiki-col-desc { grid-column: auto; }
+  .workflow-prompt-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 560px) {
+  .wiki-page {
+    padding: 0.82rem;
+    gap: 0.85rem;
+  }
+
+  .wiki-nav-wrap {
+    padding-top: 0.2rem;
+  }
+
+  .wiki-nav {
+    padding: 0.62rem 0.68rem;
+    gap: 0.45rem;
+  }
+
+  .wiki-brand {
+    font-size: 0.88rem;
+  }
+
+  .wiki-links {
+    gap: 0.28rem;
+    padding-bottom: 0.08rem;
+  }
+
+  .wiki-links a {
+    padding: 0.5rem 0.66rem;
+    font-size: 0.8rem;
+    min-height: 40px;
+  }
+
+  .wiki-card {
+    scroll-margin-top: 4.9rem;
+    padding: 1rem;
+    gap: 0.8rem;
+  }
+
+  .wiki-hero h1 {
+    line-height: 1.08;
+  }
+
+  .wiki-cta-row {
+    gap: 0.5rem;
+  }
+
+  .wiki-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .wiki-subcard {
+    padding: 0.82rem;
+  }
+
+  .path-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .path-link,
+  .path-link-primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .wiki-row {
+    padding: 0.72rem 0.72rem;
+  }
+
+  .wiki-back-top {
+    right: 0.72rem;
+    bottom: 0.72rem;
+    padding: 0.58rem 0.84rem;
+  }
+}
+
+@media (min-width: 1080px) {
+  .wiki-layout {
+    grid-template-columns: 220px minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .wiki-toc {
+    display: grid;
+    gap: 0.3rem;
+    position: sticky;
+    top: 5.1rem;
+    border: 1px solid var(--line);
+    background: color-mix(in srgb, var(--bg-panel) 92%, white);
+    border-radius: 0.95rem;
+    padding: 0.85rem;
+  }
+}
+
+@media (min-width: 1240px) {
+  .path-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }

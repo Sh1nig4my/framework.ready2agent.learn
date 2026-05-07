@@ -1,38 +1,44 @@
 # Human Start Here
 
-## 1) Cos'e questo repository
+Questa guida e pensata per chi vuole passare dalla lettura alla pratica senza saltare passaggi fondamentali.
 
-Ready2Agent Learn e la versione pubblica e formativa del metodo Ready2Agent.
+## Tre modi di usare il repository
 
-## 2) Cosa leggere prima
+1. **Percorso senza codice**: studi metodo e workflow per imparare la disciplina.
+2. **Percorso con agente**: usi prompt e contesto per ottenere piani e analisi.
+3. **Percorso con codice**: implementi task tecnici in modo incrementale.
+
+## Se sei principiante
+
+Inizia da:
 
 1. `README.md`
-2. `documentation/README.md`
+2. `documentation/quickstart/non_technical_start_here.md`
 3. `documentation/method/README.md`
-4. `documentation/case-study/README.md`
+4. `workflow/README.md`
 
-## 3) Come avviare la landing
+## Se sei sviluppatore
+
+Inizia da:
+
+1. `documentation/method/README.md`
+2. `workflow/requirements/r2a-learn-auth-iam-case-study/00-master-requirement.md`
+3. `prompts/README.md`
+
+## Passare dalla lettura alla pratica
+
+1. scegli un obiettivo piccolo del caso studio
+2. usa il prompt `00-agent-onboarding.md`
+3. passa a `01` e `02` per analisi/architettura
+4. crea task con `03`
+5. implementa con `04`
+6. valida con `05` e riallinea con `06`
+
+## Avvio tecnico locale
 
 ```bash
 npm install
 npm run dev
 ```
 
-Apri `http://localhost:3000`.
-
-## 4) Come studiare il caso
-
-- parti da `workflow/requirements/r2a-learn-auth-iam-case-study/00-master-requirement.md`
-- segui i documenti `01` -> `04`
-
-## 5) Come usare i prompt
-
-- usa `prompts/00-agent-onboarding.md` per allineare il contesto
-- prosegui in sequenza fino a `prompts/06-documentation-alignment.md`
-
-## 6) Come applicare il metodo a un progetto reale
-
-- prepara un requisito master
-- definisci confini e out-of-scope
-- usa task incrementali con quality gate
-- tratta la documentazione come parte del deliverable
+Apri `http://localhost:3000` e usa la landing come mappa iniziale del percorso.

@@ -1,41 +1,56 @@
-# 06 - Documentation Alignment
+# Prompt 06 - Documentation Alignment
 
-## Ruolo agente
+## A cosa serve
 
-Technical writer + maintainer.
+Assicura coerenza tra codice, workflow, prompt e documentazione.
 
-## Contesto
+## Quando usarlo
 
-Codice aggiornato, documentazione da riallineare.
+- dopo quality gate
+- quando una modifica cambia comportamento o percorso d'uso
 
-## Input da leggere
+## File da leggere prima
 
 - `README.md`
+- `documentation/README.md`
 - `documentation/quickstart/*`
-- `documentation/case-study/*`
-- `workflow/*`
-- `prompts/*`
+- `workflow/README.md`
+- `prompts/README.md`
 - `documentation/R2A_LEARN_full-ai-context.md`
 
-## Obiettivo
+## Prompt da copiare nell'agente
 
-Allineare documentazione e codice senza drift.
+```text
+Riallinea la documentazione di Ready2Agent Learn al codice corrente.
 
-## Vincoli
+Verifica:
+- README principale
+- quickstart
+- workflow
+- prompt
+- full AI context
 
-- mantenere linguaggio coerente Learn
+Output:
+- file aggiornati
+- motivazione modifiche
+- eventuali gap residui
+```
 
 ## Output atteso
 
-- elenco file aggiornati
-- motivazione aggiornamenti
-- gap residui
+Documentazione coerente, chiara e senza link rotti.
 
-## Controlli finali
+## Checklist per l'umano
 
-- link interni coerenti
-- scope comunicato correttamente
+- testo coerente con identita Learn
+- riferimenti interni validi
+- nessuna narrativa enterprise reintrodotta
 
-## Cosa non fare
+## Errori comuni
 
-- non reintrodurre narrativa enterprise
+- aggiornare solo codice e non docs
+- lasciare quickstart incoerenti con workflow
+
+## Passaggio successivo
+
+Torna al prompt 00 per una nuova iterazione o chiudi il ciclo.

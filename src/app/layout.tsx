@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   description:
     "Laboratorio open-source per imparare a progettare applicazioni Next.js AI-native con agenti di coding, workflow tracciati e prompt strutturati.",
   applicationName: "Ready2Agent Learn",
+  icons: {
+    icon: "/ready2agent-logo-nobg.png",
+    shortcut: "/ready2agent-logo-nobg.png",
+    apple: "/ready2agent-logo-nobg.png",
+  },
 };
 
 const bodyFont = Plus_Jakarta_Sans({

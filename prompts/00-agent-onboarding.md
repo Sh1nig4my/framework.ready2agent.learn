@@ -1,42 +1,54 @@
-# 00 - Agent Onboarding
+# Prompt 00 - Agent Onboarding
 
-## Ruolo agente
+## A cosa serve
 
-Senior coding agent orientato a refactoring controllato.
+Serve a far partire l'agente con il contesto corretto prima di toccare il codice.
 
-## Contesto
+## Quando usarlo
 
-Repository: Ready2Agent Learn (pubblico, didattico).
+- inizio di una nuova sessione
+- cambio di area funzionale
+- task complesso con molte dipendenze
 
-## Input da leggere
+## File da leggere prima
 
 - `README.md`
 - `documentation/R2A_LEARN_full-ai-context.md`
+- `documentation/quickstart/agent_start_here.md`
 - `workflow/README.md`
-- requisito master del caso studio
-- questo prompt
+- requirement master del caso studio
 
-## Obiettivo
+## Prompt da copiare nell'agente
 
-Comprendere scope, vincoli e percorso operativo.
+```text
+Agisci come coding agent su Ready2Agent Learn.
+Prima di modificare file, leggi i documenti source-of-truth del repository.
+Non implementare nulla in questa fase.
 
-## Vincoli
-
-- non implementare ancora
-- non uscire dallo scope
+Output richiesto:
+1) scope compreso
+2) confini (in-scope / out-of-scope)
+3) rischi principali
+4) piano operativo in step
+```
 
 ## Output atteso
 
-- piano operativo
-- confini di intervento
-- rischi iniziali
+- piano operativo iniziale
+- elenco file chiave
+- rischi e assunzioni
 
-## Controlli finali
+## Checklist per l'umano
 
-- conferma file letti
-- conferma scope
+- l'agente cita i file letti
+- dichiara vincoli Learn
+- non propone implementazioni fuori scope
 
-## Cosa non fare
+## Errori comuni
 
-- non scrivere codice
-- non proporre feature extra
+- saltare la lettura del full context
+- partire subito con codice
+
+## Passaggio successivo
+
+Usa `01-requirement-analysis.md`.

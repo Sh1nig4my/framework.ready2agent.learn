@@ -1,40 +1,51 @@
-# 05 - Quality Gate
+# Prompt 05 - Quality Gate
 
-## Ruolo agente
+## A cosa serve
 
-Validation agent.
+Valida la qualita tecnica del change set prima di chiudere il task.
 
-## Contesto
+## Quando usarlo
 
-Implementazione completata per uno o piu task.
+- dopo implementazione
+- prima del riallineamento documentale finale
 
-## Input da leggere
+## File da leggere prima
 
 - diff corrente
+- file toccati
 - documentazione aggiornata
 
-## Obiettivo
+## Prompt da copiare nell'agente
 
-Validare la qualita tecnica e la coerenza del change set.
+```text
+Esegui quality gate sul lavoro corrente in Ready2Agent Learn.
 
-## Vincoli
+Comandi obbligatori:
+- npm run lint
+- npm run build
+- npm run typecheck
 
-- usare solo gate reali
+Se ci sono errori:
+- elenca cause
+- proponi piano fix
+```
 
 ## Output atteso
 
-- esito `lint`
-- esito `build`
-- esito `typecheck`
-- esito test se presenti
-- controllo documentazione
-- riepilogo errori
-- piano fix
+- esito dei tre gate
+- eventuali errori
+- piano fix con priorita
 
-## Controlli finali
+## Checklist per l'umano
 
-- niente errori bloccanti aperti
+- output con evidenza reale dei comandi
+- eventuali failure spiegate con chiarezza
 
-## Cosa non fare
+## Errori comuni
 
-- non dichiarare gate passati senza evidenza
+- dichiarare "ok" senza eseguire i comandi
+- non distinguere warning da errori bloccanti
+
+## Passaggio successivo
+
+Usa `06-documentation-alignment.md`.

@@ -1,38 +1,54 @@
-# 04 - Implementation Start
+# Prompt 04 - Implementation Start
 
-## Ruolo agente
+## A cosa serve
 
-Coding agent esecutivo.
+Esegue un task specifico senza espandere lo scope.
 
-## Contesto
+## Quando usarlo
 
-Task specifico selezionato dal breakdown.
+- quando hai un task definito
+- quando vuoi implementazione incrementale controllata
 
-## Input da leggere
+## File da leggere prima
 
 - task corrente
-- file target
-- vincoli architetturali
+- requirement master
+- file tecnici del task
 
-## Obiettivo
+## Prompt da copiare nell'agente
 
-Implementare solo il task assegnato.
+```text
+Implementa solo il task selezionato nel repository Ready2Agent Learn.
 
-## Vincoli
-
+Vincoli:
 - un task alla volta
-- nessuna extra feature
-- aggiornare docs se cambia il comportamento
+- nessuna feature extra
+- non reintrodurre componenti enterprise
+- aggiornare documentazione se cambia comportamento
+
+Al termine esegui:
+npm run lint
+npm run build
+npm run typecheck
+```
 
 ## Output atteso
 
-- modifiche codice minime e coerenti
+- diff coerente con task
 - riepilogo tecnico
+- esito quality gate
 
-## Controlli finali
+## Checklist per l'umano
 
-- lint/build/typecheck
+- scope rispettato
+- nessun side effect inatteso
+- docs aggiornate quando necessario
 
-## Cosa non fare
+## Errori comuni
 
-- non estendere scope
+- implementare anche task futuri
+- saltare verifiche finali
+
+## Passaggio successivo
+
+Usa `05-quality-gate.md`.

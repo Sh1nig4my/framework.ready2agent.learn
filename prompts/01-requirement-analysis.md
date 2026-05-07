@@ -1,42 +1,50 @@
-# 01 - Requirement Analysis
+# Prompt 01 - Requirement Analysis
 
-## Ruolo agente
+## A cosa serve
 
-Analyst agent per tradurre requisiti in piano tecnico.
+Trasforma il requirement master in comprensione operativa concreta.
 
-## Contesto
+## Quando usarlo
 
-Case study Auth/IAM didattico Ready2Agent Learn.
+- dopo onboarding
+- prima di proporre architettura o task
 
-## Input da leggere
+## File da leggere prima
 
-- requisito master
-- documentazione metodo
-- full AI context
+- requirement master
+- `documentation/method/README.md`
+- `documentation/R2A_LEARN_full-ai-context.md`
 
-## Obiettivo
+## Prompt da copiare nell'agente
 
-Trasformare il requisito in comprensione operativa.
+```text
+Analizza il requirement master del caso studio Auth/IAM in Ready2Agent Learn.
+Non scrivere codice.
 
-## Vincoli
-
-- niente implementazione codice
-- mantenere perimetro didattico
-
-## Output atteso
-
+Restituisci:
 - summary
 - assumptions
 - open questions
 - risks
 - implementation boundaries
 - suggested task groups
+```
 
-## Controlli finali
+## Output atteso
 
-- coerenza con out-of-scope
-- completezza rischi
+Analisi strutturata, con confini chiari e rischi espliciti.
 
-## Cosa non fare
+## Checklist per l'umano
 
-- non inventare moduli enterprise
+- l'analisi rispetta out-of-scope
+- i rischi non sono generici
+- i task groups sono realistici
+
+## Errori comuni
+
+- confondere requirement con implementazione
+- ignorare vincoli di sicurezza
+
+## Passaggio successivo
+
+Usa `02-architecture-planning.md`.

@@ -1,42 +1,50 @@
-# 02 - Architecture Planning
+# Prompt 02 - Architecture Planning
 
-## Ruolo agente
+## A cosa serve
 
-Software architect per progettazione target.
+Definisce la struttura target prima del task breakdown.
 
-## Contesto
+## Quando usarlo
 
-Implementazione progressiva Auth/IAM didattica.
+- dopo requirement analysis
+- prima di creare task implementativi
 
-## Input da leggere
+## File da leggere prima
 
-- analisi requisito
-- documenti case study
-- struttura repository
+- output del prompt 01
+- requirement master
+- `documentation/case-study/architecture-target.md`
 
-## Obiettivo
+## Prompt da copiare nell'agente
 
-Definire architettura target pronta al task breakdown.
+```text
+Genera architettura target per il caso studio Auth/IAM di Ready2Agent Learn.
+Mantieni perimetro didattico e non reintrodurre runtime enterprise.
 
-## Vincoli
-
-- nessun codice enterprise
-- confini API/layer espliciti
-
-## Output atteso
-
-- cartelle
-- file
+Output:
+- cartelle/file
 - layer
-- contracts
+- shared contracts
 - data model
 - API boundaries
 - security boundaries
+```
 
-## Controlli finali
+## Output atteso
 
-- allineamento con requisito master
+Blueprint architetturale chiaro e implementabile.
 
-## Cosa non fare
+## Checklist per l'umano
 
-- non avviare implementazione
+- layer separati in modo coerente
+- policy server-side esplicite
+- niente dipendenze enterprise
+
+## Errori comuni
+
+- progettare troppe aree insieme
+- creare confini API vaghi
+
+## Passaggio successivo
+
+Usa `03-task-breakdown.md`.

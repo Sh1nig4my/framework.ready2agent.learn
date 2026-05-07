@@ -1,12 +1,20 @@
 # Case Study Auth/IAM
 
-Questo caso studio mostra in forma didattica come costruire un sistema Auth/IAM con il metodo Ready2Agent.
+Questo caso studio e il laboratorio principale di Ready2Agent Learn. Serve a mostrare, in modo progressivo, come si costruisce un sistema con login/logout, ruoli, permessi e policy server-side senza saltare passaggi metodologici.
 
-Riproduce un percorso reale validato, ma non include il runtime enterprise completo.
+Non trovi una soluzione enterprise gia pronta. Trovi invece un percorso guidato che insegna come arrivarci in modo tracciabile.
 
-Documenti:
+## Cosa impari dal caso studio
+
+- come definire confini di sicurezza
+- come separare UI, servizi e repository
+- come usare contratti condivisi
+- come validare ogni step con quality gate
+
+## Materiali collegati
 
 - `auth-iam-overview.md`
 - `architecture-target.md`
 - `roles-and-permissions.md`
 - `security-principles.md`
+- requirement master in `workflow/requirements/r2a-learn-auth-iam-case-study/00-master-requirement.md`
