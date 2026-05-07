@@ -3,32 +3,41 @@ export const hero = {
   subtitle:
     "Ready2Agent Learn e il laboratorio open-source italiano-first per imparare metodo, prompt, workflow e quality gate con coding agent.",
   ctas: [
-    { label: "Prova Playground", href: "#playground" },
-    { label: "Scegli il tuo percorso", href: "#paths" },
+    { label: "Apri la wiki", href: "/wiki" },
+    { label: "Guida coding agent", href: "/wiki/agent-guide" },
   ],
 };
 
+export const githubBase = "https://github.com/Sh1nig4my/framework.ready2agent.learn/blob/main/";
+
 export const quickPrompts = [
-  { label: "Company to Landing", href: "playground/01-company-to-landing-page.md" },
-  { label: "Idea to Requirement", href: "playground/02-chaotic-idea-to-requirement.md" },
-  { label: "Feature to Codex Plan", href: "playground/03-feature-to-codex-plan.md" },
+  { label: "Playground wiki", href: "/wiki/playground" },
+  { label: "Prompt system wiki", href: "/wiki/prompts" },
+  { label: "Case study wiki", href: "/wiki/case-study" },
 ];
 
 export const paths = [
-  { title: "Non tecnico", start: "documentation/quickstart/non_technical_start_here.md" },
-  { title: "Founder / consulente", start: "workflow/README.md" },
-  { title: "Junior developer", start: "exercises/README.md" },
-  { title: "Developer esperto", start: "documentation/method/README.md" },
-  { title: "Coding agent", start: "documentation/R2A_LEARN_full-ai-context.md" },
-  { title: "Docente / formatore", start: "TEACHING_GUIDE.md" },
+  { title: "Non tecnico", start: "/wiki/start-here" },
+  { title: "Founder / consulente", start: "/wiki/workflow" },
+  { title: "Junior developer", start: "/wiki/exercises" },
+  { title: "Developer esperto", start: "/wiki/method" },
+  { title: "Coding agent", start: "/wiki/agent-guide" },
+  { title: "Docente / formatore", start: "/wiki/repository-map" },
 ];
 
 export const repoMap = [
-  "README.md",
-  "playground/README.md",
-  "exercises/README.md",
-  "TEACHING_GUIDE.md",
-  "documentation/README.md",
-  "prompts/README.md",
-  "workflow/README.md",
+  { label: "README", href: "/wiki/start-here" },
+  { label: "Playground", href: "/wiki/playground" },
+  { label: "Exercises", href: "/wiki/exercises" },
+  { label: "Prompts", href: "/wiki/prompts" },
+  { label: "Workflow", href: "/wiki/workflow" },
+  { label: "Boundary", href: "/wiki/public-private-boundary" },
+];
+
+export const sourceOfTruthLinks = [
+  { label: "README.md", href: `${githubBase}README.md` },
+  { label: "AI context", href: `${githubBase}documentation/R2A_LEARN_full-ai-context.md` },
+  { label: "Agent quickstart", href: `${githubBase}documentation/quickstart/agent_start_here.md` },
+  { label: "Prompts hub", href: `${githubBase}prompts/README.md` },
+  { label: "Workflow hub", href: `${githubBase}workflow/README.md` },
 ];

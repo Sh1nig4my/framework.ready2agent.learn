@@ -3,7 +3,7 @@ import { hero } from "@/content/landing";
 export function HeroSection() {
   return (
     <section className="r2a-card" id="hero">
-      <p className="r2a-badge">Ready2Agent Learn v1.0.0</p>
+      <p className="r2a-badge">Ready2Agent Learn v1.2.2</p>
       <h1>{hero.title}</h1>
       <p>{hero.subtitle}</p>
       <div className="r2a-row">

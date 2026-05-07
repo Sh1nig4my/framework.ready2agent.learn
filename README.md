@@ -1,8 +1,12 @@
 # Ready2Agent Learn
 
+Versione corrente: **v1.2.2 - Guided Wiki & Agent-Safe Navigation**.
+
 ## In una frase
 
 Ready2Agent Learn e un laboratorio open-source per imparare a progettare, guidare e validare il lavoro con coding agent attraverso metodo, prompt, workflow, esercizi, playground e quality gate.
+
+Per orientamento visuale rapido apri la wiki interna: `/wiki`.
 
 ## Perche esiste
 
@@ -41,6 +45,17 @@ Apri `workflow/README.md` e poi passa al case study in `workflow/requirements/r2
 - Coding agent: `documentation/R2A_LEARN_full-ai-context.md` + `documentation/quickstart/agent_start_here.md`
 - Docente / formatore: `TEACHING_GUIDE.md`
 
+## Wiki guidata
+
+La wiki e il livello di navigazione del repository:
+
+- index: `/wiki`
+- avvio rapido: `/wiki/start-here`
+- guida agenti: `/wiki/agent-guide`
+- quality gate: `/wiki/quality-gates`
+
+I markdown restano source-of-truth di approfondimento.
+
 ## Playground: prova subito
 
 Il playground e la zona a frizione minima: input rapidi, prompt pronti, output attesi chiari.
@@ -67,6 +82,7 @@ Il case study Auth/IAM e la sfida seria del laboratorio: policy, ruoli, permessi
 
 ## Come usare Codex/OpenCode
 
+0. Leggi `AGENTS.md` (guardrail rapidi root-level).
 1. Leggi `prompts/README.md`.
 2. Copia `prompts/00-agent-onboarding.md`.
 3. Fai leggere all'agente `documentation/R2A_LEARN_full-ai-context.md`.
@@ -100,7 +116,7 @@ Se l'output non e verificabile, il task non e finito.
 
 ## Cosa NON e
 
-Ready2Agent Learn v1.0.0:
+Ready2Agent Learn v1.2.2:
 
 - non e un backend framework enterprise pronto
 - non include database reale
@@ -124,6 +140,7 @@ Contribuisci con esercizi, esempi, miglioramenti di chiarezza, quality gate docu
 Prima di aprire una PR:
 
 - Apri `documentation/project-meta/release-definition-v1.md`
+- Apri `documentation/project-meta/release-definition-v1.1.2.md`
 - Apri `documentation/project-meta/public-private-boundary.md`
 - Apri `documentation/project-meta/editorial-style-guide.md`
 

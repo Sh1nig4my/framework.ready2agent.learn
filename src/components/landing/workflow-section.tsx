@@ -5,10 +5,10 @@ export function WorkflowSection() {
       <p>Requisito -&gt; prompt -&gt; task -&gt; gate -&gt; documentazione allineata.</p>
       <ul>
         <li>
-          <a href="workflow/README.md">Workflow hub</a>
+          <a href="/wiki/workflow">Workflow hub</a>
         </li>
         <li>
-          <a href="workflow/trackers/auth-iam-case-study-tracker.md">Tracker Auth/IAM</a>
+          <a href="/wiki/case-study">Case study Auth/IAM</a>
         </li>
       </ul>
     </section>

@@ -4,12 +4,13 @@ Questa guida definisce il comportamento atteso per un coding agent che lavora su
 
 ## Sequenza iniziale obbligatoria
 
-1. leggi `README.md`
-2. leggi `documentation/R2A_LEARN_full-ai-context.md`
-3. leggi `prompts/README.md`
-4. leggi `workflow/README.md`
-5. leggi il requirement master
-6. identifica se il task e di implementazione o workflow maintenance
+1. leggi `AGENTS.md`
+2. leggi `README.md`
+3. leggi `documentation/R2A_LEARN_full-ai-context.md`
+4. leggi `prompts/README.md`
+5. leggi `workflow/README.md`
+6. leggi il requirement master
+7. identifica se il task e di implementazione o workflow maintenance
 
 ## Distinzione operativa fondamentale
 
@@ -30,7 +31,11 @@ Questa guida definisce il comportamento atteso per un coding agent che lavora su
 npm run lint
 npm run build
 npm run typecheck
+npm run check:structure
+npm run quality
 ```
+
+Per task/release importanti riporta sia `npm run quality` sia i singoli esiti.
 
 ## Output finale richiesto
 

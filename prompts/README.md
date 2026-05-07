@@ -15,10 +15,11 @@ Gli esercizi richiedono uso disciplinato dei prompt e aggiornamento tracker.
 ## Come usare i prompt
 
 1. leggi `README.md` e il contesto del repository
-2. scegli il prompt della fase corrente
-3. copia il prompt e incollalo nell'agente
-4. verifica l'output rispetto a checklist e confini
-5. passa al prompt successivo solo quando il risultato e chiaro
+2. leggi `AGENTS.md` per guardrail e confini
+3. scegli il prompt della fase corrente
+4. copia il prompt e incollalo nell'agente
+5. verifica l'output rispetto a checklist e confini
+6. passa al prompt successivo solo quando il risultato e chiaro
 
 ## Quando usare i prompt principali 00-06
 
@@ -84,7 +85,7 @@ Vincoli:
 - implementa solo questo task
 - nessuna feature extra
 - aggiorna documentazione se cambia comportamento
-- esegui lint, build, typecheck
+- esegui lint, build, typecheck, check:structure, quality
 
 Output:
 - modifiche fatte

@@ -54,6 +54,7 @@ Nel repository Learn non vanno reintrodotte dashboard private, runtime auth comp
 
 ## Regole per agenti
 
+- leggere `AGENTS.md` prima di pianificare
 - leggere prima i documenti source-of-truth
 - produrre piano operativo prima delle modifiche
 - non implementare fuori scope
@@ -87,12 +88,23 @@ Quando una richiesta e ambigua ma non bloccante, scegliere il default piu conser
 - `npm run lint`
 - `npm run build`
 - `npm run typecheck`
+- `npm run check:structure`
+- `npm run quality`
+
+`npm run quality` aggrega i principali controlli; in chiusura task/release riportare anche gli esiti dei singoli comandi.
 
 ## Source-of-truth hierarchy
 
 1. `README.md`
 2. `documentation/R2A_LEARN_full-ai-context.md`
 3. `documentation/quickstart/agent_start_here.md`
-4. `workflow/requirements/r2a-learn-auth-iam-case-study/00-master-requirement.md`
-5. `prompts/README.md` + prompt corrente
-6. codice sorgente
+4. `prompts/README.md`
+5. `workflow/README.md`
+6. `workflow/requirements/r2a-learn-auth-iam-case-study/00-master-requirement.md`
+7. file sorgente coinvolti
+
+## Navigazione v1.2.2
+
+- homepage: orientamento rapido
+- wiki: `/wiki` e sottopagine guidate
+- markdown: source-of-truth di approfondimento

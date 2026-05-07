@@ -1,13 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --bg-base: #f7f4ec;
-  --bg-panel: #fffdf8;
-  --bg-strong: #183a37;
-  --text-primary: #18212f;
-  --text-muted: #5c677f;
-  --line: #d8d2c1;
-  --accent: #ca6833;
+  --bg-base: #f6efe5;
+  --bg-panel: #fffaf2;
+  --bg-strong: #22463f;
+  --text-primary: #1e2731;
+  --text-muted: #4d5e73;
+  --line: #d9cdb8;
+  --accent: #c96b37;
+  --accent-soft: #f5e4d4;
+  --ok-bg: #e4efe9;
+  --ok-text: #265b46;
+  --pending-bg: #f2e8da;
+  --pending-text: #7b4f2f;
 }
 
 * { box-sizing: border-box; }
@@ -19,8 +24,8 @@ body {
   font-family: var(--font-body), sans-serif;
   color: var(--text-primary);
   background:
-    radial-gradient(circle at 8% 0%, rgba(202, 104, 51, 0.17), transparent 30%),
-    radial-gradient(circle at 92% 14%, rgba(24, 58, 55, 0.16), transparent 34%),
+    radial-gradient(circle at 8% 0%, rgba(201, 107, 55, 0.24), transparent 33%),
+    radial-gradient(circle at 90% 12%, rgba(34, 70, 63, 0.2), transparent 36%),
     var(--bg-base);
 }
 
@@ -175,11 +180,12 @@ li { margin-top: 0.35rem; }
 .wiki-card {
   scroll-margin-top: 5.4rem;
   border: 1px solid var(--line);
-  background: var(--bg-panel);
+  background: linear-gradient(180deg, color-mix(in srgb, var(--bg-panel) 88%, #fff) 0%, var(--bg-panel) 100%);
   border-radius: 1.1rem;
   padding: 1.2rem;
   display: grid;
   gap: 0.95rem;
+  box-shadow: 0 10px 24px rgba(49, 42, 33, 0.05);
 }
 
 .wiki-card:target {
@@ -188,6 +194,13 @@ li { margin-top: 0.35rem; }
 
 .wiki-hero h1 { font-size: clamp(2rem, 4.3vw, 3.4rem); line-height: 1.05; }
 .wiki-hero p { color: var(--text-muted); max-width: 72ch; }
+
+.wiki-hero {
+  background:
+    radial-gradient(circle at 100% 0%, rgba(201, 107, 55, 0.14), transparent 42%),
+    radial-gradient(circle at 0% 100%, rgba(34, 70, 63, 0.08), transparent 40%),
+    linear-gradient(180deg, color-mix(in srgb, var(--bg-panel) 82%, #fff) 0%, var(--bg-panel) 100%);
+}
 
 .wiki-badge {
   display: inline-block;
@@ -214,7 +227,7 @@ li { margin-top: 0.35rem; }
   text-decoration: none;
   font-weight: 600;
   color: var(--text-primary);
-  background: white;
+  background: color-mix(in srgb, #fff 90%, var(--accent-soft));
   font-size: 0.92rem;
   min-height: 42px;
   display: inline-flex;
@@ -224,6 +237,8 @@ li { margin-top: 0.35rem; }
 .wiki-btn:hover,
 .wiki-btn:focus-visible {
   transform: translateY(-1px);
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--line));
+  box-shadow: 0 6px 16px rgba(52, 43, 35, 0.08);
   outline: none;
 }
 
@@ -274,10 +289,14 @@ li { margin-top: 0.35rem; }
 .wiki-subcard {
   border: 1px solid var(--line);
   border-radius: 0.95rem;
-  background: #fff;
+  background: linear-gradient(180deg, #fff 0%, color-mix(in srgb, #fff 88%, var(--accent-soft)) 100%);
   padding: 0.9rem;
   display: grid;
   gap: 0.55rem;
+}
+
+.wiki-subcard h3 {
+  color: #1f2f3a;
 }
 
 .path-grid {
@@ -450,6 +469,66 @@ li { margin-top: 0.35rem; }
 
 .wiki-subcard p { color: var(--text-muted); }
 
+.wiki-breadcrumb-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  background: color-mix(in srgb, var(--accent-soft) 52%, var(--bg-panel));
+}
+
+.wiki-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.wiki-breadcrumb a {
+  text-decoration: none;
+  color: #1f3f66;
+}
+
+.wiki-step {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.wiki-status-badge {
+  width: fit-content;
+  margin: 0;
+  padding: 0.2rem 0.52rem;
+  border-radius: 999px;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--pending-text);
+  background: var(--pending-bg);
+}
+
+.wiki-status-read {
+  color: var(--ok-text);
+  background: var(--ok-bg);
+}
+
+.wiki-status-pending {
+  color: var(--pending-text);
+  background: var(--pending-bg);
+}
+
+.wiki-prev-next {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.wiki-warning-card {
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--line));
+  background: linear-gradient(180deg, color-mix(in srgb, var(--accent-soft) 72%, #fff) 0%, #fff 100%);
+}
+
 .wiki-prompt-table {
   border: 1px solid var(--line);
   border-radius: 0.95rem;
@@ -572,6 +651,12 @@ li { margin-top: 0.35rem; }
     right: 0.72rem;
     bottom: 0.72rem;
     padding: 0.58rem 0.84rem;
+  }
+
+  .wiki-breadcrumb-card,
+  .wiki-prev-next {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
