@@ -16,10 +16,11 @@ Gli esercizi richiedono uso disciplinato dei prompt e aggiornamento tracker.
 
 1. leggi `README.md` e il contesto del repository
 2. leggi `AGENTS.md` per guardrail e confini
-3. scegli il prompt della fase corrente
-4. copia il prompt e incollalo nell'agente
-5. verifica l'output rispetto a checklist e confini
-6. passa al prompt successivo solo quando il risultato e chiaro
+3. leggi le skills in `.agents/skills/`
+4. scegli il prompt della fase corrente
+5. copia il prompt e incollalo nell'agente
+6. verifica l'output rispetto a checklist e confini
+7. passa al prompt successivo solo quando il risultato e chiaro
 
 ## Quando usare i prompt principali 00-06
 
@@ -64,6 +65,11 @@ Poi:
 - mantieni documentazione allineata
 - se il task riguarda workflow usa prompts/workflow-maintenance/
 - se il task riguarda implementazione usa i prompt principali 00-06
+
+Leggi anche:
+- .agents/skills/README.md
+- .agents/skills/READY2AGENT_LEARN_ADAPTER.md
+- .agents/skills/ready2agent-learn-core/SKILL.md
 
 Output richiesto prima delle modifiche:
 - piano operativo

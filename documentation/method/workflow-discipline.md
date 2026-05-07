@@ -10,6 +10,8 @@ Permette continuita tra persone, sessioni e agenti.
 
 ## Come usarlo con un agente
 
+Carica prima il contesto skills-first da `.agents/skills/`, poi:
+
 Segui la pipeline:
 
 `requisito -> analisi -> architettura -> task -> implementazione -> quality gate -> doc alignment`

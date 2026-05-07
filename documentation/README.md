@@ -15,6 +15,7 @@ La cartella `documentation/` e il cuore didattico di Ready2Agent Learn. Qui non 
 ## Struttura della documentazione
 
 - `quickstart/`: guide di ingresso per profili diversi
+- `quickstart/skills-local-setup.md`: setup locale skills con OpenCode (Linux, macOS, Windows)
 - `method/`: principi operativi con checklist
 - `examples/`: confronti bad vs good
 - `case-study/`: materiale del caso studio Auth/IAM
@@ -41,9 +42,21 @@ La cartella `documentation/` e il cuore didattico di Ready2Agent Learn. Qui non 
 1. `README.md`
 2. `documentation/R2A_LEARN_full-ai-context.md`
 3. `documentation/quickstart/agent_start_here.md`
-4. `workflow/README.md`
-5. `prompts/README.md`
-6. `prompts/workflow-maintenance/README.md` (quando il task riguarda il processo)
+4. `.agents/skills/README.md`
+5. `.agents/skills/READY2AGENT_LEARN_ADAPTER.md`
+6. `.agents/skills/ready2agent-learn-core/SKILL.md`
+7. `documentation/quickstart/skills-local-setup.md`
+8. `workflow/README.md`
+9. `prompts/README.md`
+10. `prompts/workflow-maintenance/README.md` (quando il task riguarda il processo)
+
+## Percorso consigliato skills-first
+
+1. leggi `README.md`
+2. leggi introduzione skills in `.agents/skills/README.md`
+3. configura OpenCode con `documentation/quickstart/skills-local-setup.md`
+4. usa/modifica skills didattiche in `.agents/skills/`
+5. passa a prompt, workflow ed esempi operativi
 
 ## Come si collegano documentation, workflow e prompts
 

@@ -6,6 +6,8 @@ Versione corrente: **v1.2.2 - Guided Wiki & Agent-Safe Navigation**.
 
 Ready2Agent Learn e un laboratorio open-source per imparare a progettare, guidare e validare il lavoro con coding agent attraverso metodo, prompt, workflow, esercizi, playground e quality gate.
 
+Modello consigliato: skills-first con skills leggere e modificabili in `.agents/skills/`.
+
 Per orientamento visuale rapido apri la wiki interna: `/wiki`.
 
 ## Perche esiste
@@ -83,11 +85,16 @@ Il case study Auth/IAM e la sfida seria del laboratorio: policy, ruoli, permessi
 ## Come usare Codex/OpenCode
 
 0. Leggi `AGENTS.md` (guardrail rapidi root-level).
-1. Leggi `prompts/README.md`.
-2. Copia `prompts/00-agent-onboarding.md`.
-3. Fai leggere all'agente `documentation/R2A_LEARN_full-ai-context.md`.
-4. Esegui i prompt `00` -> `06` in ordine.
-5. Se il task e sul processo, usa `prompts/workflow-maintenance/`.
+1. Leggi `.agents/skills/README.md`.
+2. Leggi `.agents/skills/READY2AGENT_LEARN_ADAPTER.md`.
+3. Leggi `.agents/skills/ready2agent-learn-core/SKILL.md`.
+4. Leggi `prompts/README.md`.
+5. Copia `prompts/00-agent-onboarding.md`.
+6. Fai leggere all'agente `documentation/R2A_LEARN_full-ai-context.md`.
+7. Esegui i prompt `00` -> `06` in ordine.
+8. Se il task e sul processo, usa `prompts/workflow-maintenance/`.
+
+Per setup locale multi-OS delle skills: `documentation/quickstart/skills-local-setup.md`.
 
 ## Teaching guide
 
@@ -112,6 +119,7 @@ Se l'output non e verificabile, il task non e finito.
 - `exercises/`: percorso progressivo con tracker
 - `workflow/`: requisito master e tracker di avanzamento
 - `prompts/`: prompt principali e workflow-maintenance
+- `.agents/skills/`: skills didattiche leggere e adattabili
 - `src/`: landing e skeleton didattico frontend
 
 ## Cosa NON e
@@ -126,6 +134,12 @@ Ready2Agent Learn v1.2.2:
 - non include moduli business reali o codice cliente
 
 E un prodotto didattico open-source autonomo.
+
+## Learn vs framework operativo
+
+- `framework.ready2agent.learn` e il repository pubblico didattico.
+- Il framework operativo Ready2Agent e separato e non e incluso in questo repository.
+- Le skills di Learn sono esempi educativi: puoi ridurle, unirle o riscriverle.
 
 ## Public/private boundary
 
@@ -153,3 +167,5 @@ https://emanueleienna.dev/consultant/form-request
 ## Licenza
 
 Vedi `LICENSE`.
+
+Per chiarimenti d'uso didattico e confini sugli asset non inclusi, vedi `NOTICE.md`.
