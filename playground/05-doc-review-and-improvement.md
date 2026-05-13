@@ -1,21 +1,22 @@
 # Doc Review and Improvement
 
-## Quando usarlo
+## Input confuso
 
-Quando hai documentazione presente ma poco chiara o non allineata al codice.
+"La documentazione c'e ma e difficile da seguire e non sappiamo cosa correggere prima."
 
-## Cosa ottieni
+## Prompt debole
 
-Analisi gap, proposta miglioramenti, versione riscritta di sezioni critiche.
+```text
+Rivedi la documentazione e migliorala.
+```
 
-## Input richiesti
+## Output mediocre
 
-- file doc da revisionare
-- obiettivo del documento
-- pubblico target
-- eventuali file codice correlati
+- feedback generico
+- priorita assenti
+- nessun collegamento a file/repo
 
-## Prompt pronto da copiare
+## Prompt migliorato (Ready2Agent)
 
 ```text
 Agisci come technical writer orientato a prodotti didattici.
@@ -42,23 +43,27 @@ Vincoli:
 - Ogni sezione deve dire cosa fare subito.
 ```
 
-## Output atteso
+## Output buono/eccellente
 
-Piano di miglioramento documentale con esempi riscritti.
+- piano miglioramento con priorita
+- sezioni critiche gia riscritte
+- checklist doc-codice riusabile
 
-## Come valutare il risultato
+## Perche migliora
 
-- il documento diventa piu azionabile?
-- i link e riferimenti sono coerenti?
-- si riducono ambiguita per nuovi utenti?
+- rende la review azionabile
+- evita revisioni cosmetiche
+- allinea documentazione e comportamento reale
 
-## Variante avanzata
+## Checklist validazione
 
-Chiedi una revisione comparata:
+- gap specifici e non generici
+- priorita chiare
+- riferimenti coerenti a file reali
+- riduzione ambiguita per nuovi utenti
 
-- versione per non tecnici
-- versione per developer
+## Collegamenti utili
 
-## Prossimo step consigliato
-
-Usa `prompts/06-documentation-alignment.md` per applicare i fix nel repository.
+- First Mission: `documentation/first-mission/README.md`
+- Prompt consigliato: `prompts/06-documentation-alignment.md`
+- Next step: `exercises/level-02-agent-workflow/05-define-quality-gate.md`

@@ -2,39 +2,44 @@ export const WIKI_READ_STORAGE_KEY = "r2a-wiki-read";
 
 export const wikiSections = [
   {
+    title: "First mission",
+    href: "/wiki/first-mission",
+    desc: "Golden path iniziale: in 30-60 minuti trasformi un'idea confusa in un First Mission Dossier verificabile.",
+  },
+  {
     title: "Start here",
     href: "/wiki/start-here",
-    desc: "Se sei nuovo nel progetto, questa sezione ti guida nell'ordine corretto di lettura per evitare confusione nei primi minuti.",
+    desc: "Leggi in ordine: source-of-truth, confini, poi prosegui verso Method.",
   },
   {
     title: "Method",
     href: "/wiki/method",
-    desc: "Qui capisci come il metodo Ready2Agent trasforma idee vaghe in task verificabili, con confini chiari e decisioni tracciate.",
+    desc: "Capisci come trasformare idee vaghe in task verificabili, con confini chiari e decisioni tracciate.",
   },
   {
     title: "Playground",
     href: "/wiki/playground",
-    desc: "La zona per fare pratica veloce: pochi input, output immediati e primi risultati senza uscire dallo scope didattico.",
+    desc: "Libreria comparativa per pratica veloce: prompt debole vs prompt migliorato, output mediocre vs output verificabile.",
   },
   {
     title: "Prompts",
     href: "/wiki/prompts",
-    desc: "Spiega quando usare i prompt 00-06 e quando passare a workflow-maintenance, cosi sai sempre quale passo fare dopo.",
+    desc: "Scegli il prompt 00-06 della fase: output contract, anti-drift, poi prosegui su Workflow.",
   },
   {
     title: "Workflow",
     href: "/wiki/workflow",
-    desc: "Ti mostra come mantenere memoria del processo tra requirement, task, tracker e documentazione, evitando lavoro scollegato.",
+    desc: "Traccia requirement, task e decisioni con tracker e stato aggiornato: poi prosegui su Exercises.",
   },
   {
     title: "Exercises",
     href: "/wiki/exercises",
-    desc: "Percorso progressivo per allenarti: da esercizi base a casi piu complessi, con feedback e progresso leggibile.",
+    desc: "Allenati con rubrica, scorecard e tracker: da esercizi base a casi complessi con valutazione misurabile.",
   },
   {
     title: "Case study",
     href: "/wiki/case-study",
-    desc: "Il caso Auth/IAM e la palestra completa: applica metodo, prompt e quality gate su una sfida realistica ma didattica.",
+    desc: "Il caso Auth/IAM usa tre livelli (A concettuale, B mock, C transfer) per allenare metodo senza deriva enterprise.",
   },
   {
     title: "Quality gates",
@@ -54,6 +59,6 @@ export const wikiSections = [
   {
     title: "Public/private boundary",
     href: "/wiki/public-private-boundary",
-    desc: "Definisce il confine tra laboratorio pubblico Learn e runtime privato, per evitare derive enterprise fuori scope.",
+    desc: "Leggi il confine tra Learn pubblico e runtime privato, poi approfondisci Method.",
   },
 ];

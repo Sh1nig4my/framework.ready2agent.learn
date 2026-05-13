@@ -21,6 +21,9 @@ export default function HomePage() {
           gate.
         </p>
         <div className="r2a-row">
+          <a className="r2a-btn r2a-btn-primary" href="/wiki/first-mission">
+            Inizia la First Mission
+          </a>
           <a className="r2a-btn r2a-btn-primary" href="/wiki">
             Vai alla wiki
           </a>
@@ -28,6 +31,7 @@ export default function HomePage() {
             Quality gates
           </a>
         </div>
+        <p className="r2a-muted">Output consigliato: completa un First Mission Dossier verificabile in 30-60 minuti.</p>
       </section>
 
       <PlaygroundSection />

@@ -1,30 +1,28 @@
 # Company to Landing Page
 
-## Quando usarlo
+## Input confuso
 
-Quando hai un'azienda o progetto ma non hai una landing chiara.
+"Abbiamo un prodotto B2B, ci serve una landing bella che converta."
 
-## Cosa ottieni
+## Prompt debole
 
-Value proposition, struttura sezioni, hero copy, CTA, prompt operativo per codice e checklist finale.
+```text
+Scrivi una landing page per il nostro prodotto.
+```
 
-## Input richiesti
+## Output mediocre
 
-- nome azienda/progetto
-- settore
-- pubblico target
-- problema principale
-- promessa/beneficio
-- tono comunicativo
-- CTA principale
-- vincoli (tempo, stack, stile)
+- headline generica
+- sezioni standard senza target chiaro
+- CTA vaga
+- nessun criterio di validazione
 
-## Prompt pronto da copiare
+## Prompt migliorato (Ready2Agent)
 
 ```text
 Agisci come product copy strategist e frontend planner.
 
-Trasforma questi input in una landing page operativa:
+Trasforma questi input in una landing operativa:
 - Nome progetto: <...>
 - Settore: <...>
 - Pubblico: <...>
@@ -48,28 +46,28 @@ Vincoli:
 - Output in italiano.
 ```
 
-## Output atteso
+## Output buono/eccellente
 
-- una bozza landing completa e ordinata
-- un prompt tecnico pronto per il coding agent
-- una checklist di qualita riusabile
+- proposta di valore specifica
+- sezioni ordinate per percorso utente
+- CTA coerente con problema e target
+- checklist pronta per review
 
-## Come valutare il risultato
+## Perche migliora
 
-- la promessa e specifica?
-- il pubblico e riconoscibile?
-- la CTA e coerente con il problema?
-- le sezioni evitano ridondanze?
+- riduce ambiguita iniziale
+- impone output verificabile
+- collega copy e implementazione
 
-## Variante avanzata
+## Checklist validazione
 
-Chiedi due versioni della stessa landing:
+- promessa specifica e comprensibile
+- target riconoscibile
+- CTA coerente con obiettivo
+- sezioni senza ridondanze
 
-- una orientata conversione
-- una orientata credibilita istituzionale
+## Collegamenti utili
 
-Poi confronta trade-off.
-
-## Prossimo step consigliato
-
-Passa a `playground/03-feature-to-codex-plan.md` per tradurre una sezione in task implementativi.
+- First Mission: `documentation/first-mission/README.md`
+- Prompt consigliato: `prompts/01-requirement-analysis.md`
+- Next step: `exercises/level-03-practical-builds/01-company-landing-page.md`

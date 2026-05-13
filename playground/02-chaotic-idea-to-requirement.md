@@ -1,30 +1,30 @@
 # Chaotic Idea to Requirement
 
-## Quando usarlo
+## Input confuso
 
-Quando hai un'idea confusa e devi ottenere un requisito utilizzabile.
+"Vorrei una dashboard clienti moderna con analytics, automazioni e AI, possibilmente subito."
 
-## Cosa ottieni
+## Prompt debole
 
-Requirement breve con obiettivo, scope, out-of-scope, vincoli, criteri di successo.
+```text
+Trasforma questa idea in un requisito.
+```
 
-## Input richiesti
+## Output mediocre
 
-- idea iniziale in testo libero
-- utente target
-- problema da risolvere
-- risultato atteso
-- limiti noti
+- obiettivo ampio e non verificabile
+- scope non delimitato
+- assenza di out-of-scope
 
-## Prompt pronto da copiare
+## Prompt migliorato (Ready2Agent)
 
 ```text
 Agisci come requirement analyst agent-native.
 
-Prendi questa idea confusa e trasformala in un requisito operativo:
+Prendi questa idea confusa e trasformala in requisito operativo:
 <incolla qui l'idea>
 
-Output richiesto in sezioni:
+Output richiesto:
 1) Obiettivo in 1-2 frasi.
 2) Scope (cosa facciamo ora).
 3) Out-of-scope (cosa NON facciamo ora).
@@ -39,20 +39,27 @@ Vincoli:
 - Ogni criterio deve essere verificabile.
 ```
 
-## Output atteso
+## Output buono/eccellente
 
-Un requisito leggibile da team umano e coding agent.
+- requisito leggibile da umano e agente
+- criteri misurabili
+- confini chiari per evitare scope creep
 
-## Come valutare il risultato
+## Perche migliora
 
-- scope e out-of-scope sono separati?
-- i criteri sono misurabili?
-- ci sono assunzioni non validate?
+- separa desiderio da requirement
+- rende verificabile il lavoro
+- prepara il passaggio ai prompt 00-06
 
-## Variante avanzata
+## Checklist validazione
 
-Chiedi una versione "MVP 2 settimane" e una "roadmap 8 settimane" dello stesso requisito.
+- scope e out-of-scope separati
+- criteri misurabili
+- assunzioni evidenziate
+- rischi con mitigazioni
 
-## Prossimo step consigliato
+## Collegamenti utili
 
-Vai a `playground/04-business-context-to-agent-prompt.md` per trasformare il requisito in prompt operativo.
+- First Mission: `documentation/first-mission/README.md`
+- Prompt consigliato: `prompts/01-requirement-analysis.md`
+- Next step: `exercises/level-01-foundations/01-vague-idea-to-requirement.md`

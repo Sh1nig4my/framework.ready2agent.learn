@@ -2,6 +2,8 @@
 
 Questa guida definisce il comportamento atteso per un coding agent che lavora su Ready2Agent Learn.
 
+L'agente accelera cio che hai chiarito.
+
 ## Sequenza iniziale obbligatoria
 
 1. leggi `AGENTS.md`
@@ -36,6 +38,11 @@ npm run lint
 npm run build
 npm run typecheck
 npm run check:structure
+npm run check:prompts
+npm run check:boundary
+npm run check:routes
+npm run check:links
+npm run check:content-drift
 npm run quality
 ```
 

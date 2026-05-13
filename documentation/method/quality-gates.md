@@ -16,6 +16,11 @@ Esegui sempre:
 - `npm run build`
 - `npm run typecheck`
 - `npm run check:structure`
+- `npm run check:prompts`
+- `npm run check:boundary`
+- `npm run check:routes`
+- `npm run check:links`
+- `npm run check:content-drift`
 
 ## Esempio pratico
 

@@ -41,6 +41,16 @@ Usa sempre gli stessi termini per ridurre ambiguita.
 - `Valida ...`
 - `Aggiorna ...`
 
+## Signature editoriali (formule chiave)
+
+Usa queste formule in modo mirato nei contesti indicati. Ogni formula deve apparire 1-2 volte nel repository, non essere ripetuta ovunque.
+
+- `"Non chiedere solo codice. Progetta il contesto che genera buon codice."` — homepage, README, messaggio principale del prodotto.
+- `"Se non e verificabile, non e finito."` — quality gate, rubriche, checklist di completamento.
+- `"Il prompt non e la richiesta: e il contratto operativo."` — hub prompts, ogni riferimento al sistema 00-06.
+- `"Il workflow e memoria, non burocrazia."` — hub workflow, descrizione del tracking.
+- `"L'agente accelera cio che hai chiarito."` — playground, agent guide, quickstart.
+
 ## Cosa evitare
 
 - frasi vaghe: "migliora", "ottimizza tutto", "fai il massimo"

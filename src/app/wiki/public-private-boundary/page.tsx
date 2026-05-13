@@ -9,9 +9,9 @@ export default function WikiPublicPrivateBoundaryPage() {
       title="Public/private boundary"
       description="Questa pagina chiarisce il confine tra laboratorio pubblico e runtime privato, per proteggere identita e obiettivi del progetto Learn."
       purpose="Evitare reintroduzione di moduli business reali e mantenere il repository didattico, open-source e accessibile."
-      whenToUse="Usala prima di modifiche architetturali e quando una richiesta sembra spingere verso logiche enterprise production-ready."
-      learningOutcome="Imparerai a valutare una richiesta non solo per fattibilita tecnica, ma anche per coerenza con il perimetro del laboratorio."
-      commonMistake="Accettare ogni richiesta tecnica senza filtrarla: il risultato e un repository meno didattico e piu confuso."
+      whenToUse="Apri questa pagina prima di modifiche architetturali o quando una richiesta spinge verso logiche enterprise fuori perimetro."
+      learningOutcome="Imparerai a valutare ogni richiesta per coerenza con il perimetro didattico, non solo per fattibilita tecnica."
+      commonMistake="Accettare richieste senza filtrarle: il repository diventa meno didattico e piu confuso."
       sourceLinks={[
         {
           label: "Boundary document",
@@ -22,7 +22,7 @@ export default function WikiPublicPrivateBoundaryPage() {
           href: `${base}documentation/project-meta/release-definition-v1.1.2.md`,
         },
       ]}
-      nextStep={{ label: "Torna a Start here", href: "/wiki/start-here" }}
+      nextStep={{ label: "Approfondisci Method", href: "/wiki/method" }}
     />
   );
 }

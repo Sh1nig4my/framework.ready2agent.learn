@@ -89,9 +89,14 @@ Quando una richiesta e ambigua ma non bloccante, scegliere il default piu conser
 - `npm run build`
 - `npm run typecheck`
 - `npm run check:structure`
+- `npm run check:prompts`
+- `npm run check:boundary`
+- `npm run check:routes`
+- `npm run check:links`
+- `npm run check:content-drift`
 - `npm run quality`
 
-`npm run quality` aggrega i principali controlli; in chiusura task/release riportare anche gli esiti dei singoli comandi.
+`npm run quality` aggrega tutti i controlli; in chiusura task/release riportare anche gli esiti dei singoli comandi.
 
 ## Source-of-truth hierarchy
 

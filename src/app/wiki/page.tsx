@@ -22,11 +22,11 @@ export default function WikiIndexPage() {
         </p>
         <p className="wiki-muted">
           Progresso lettura: {completed}/{wikiSections.length} sezioni completate. Obiettivo consigliato: completare almeno
-          Start here, Method, Prompts e Quality gates.
+          First mission, Playground, Prompts e Quality gates.
         </p>
         <div className="wiki-cta-row">
-          <Link className="wiki-btn wiki-btn-primary" href="/wiki/start-here">
-            Inizia da Start here
+          <Link className="wiki-btn wiki-btn-primary" href="/wiki/first-mission">
+            Inizia da First mission
           </Link>
           <Link className="wiki-btn" href="/wiki/agent-guide">
             Guida coding agent

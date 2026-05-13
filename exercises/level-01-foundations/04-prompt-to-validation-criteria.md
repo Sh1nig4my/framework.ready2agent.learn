@@ -56,6 +56,20 @@ Registra quality gate eseguiti.
 
 Aggiungi matrice rischio/impatto per decidere revisione o accettazione.
 
+## Checklist di completamento
+
+- [ ] criteri di validazione misurabili
+- [ ] soglie minime esplicite
+- [ ] fallback in caso di output insufficiente
+- [ ] scorecard compilata
+
+## Rubrica e scorecard
+
+- Rubrica standard: `exercises/rubrics/standard-rubric.md`
+- Scorecard: `exercises/rubrics/scorecard-template.md`
+- Retrospettiva: `exercises/templates/retrospective-template.md`
+- Esempi: `exercises/examples/README.md`
+
 ## Prossimo esercizio consigliato
 
 `exercises/level-02-agent-workflow/01-review-incomplete-agent-output.md`

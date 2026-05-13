@@ -57,6 +57,20 @@ Aggiungi prompt usato e note.
 
 Scrivi anche una versione "strict mode" con vincoli piu duri.
 
+## Checklist di completamento
+
+- [ ] prompt con ruolo, task, input e output
+- [ ] confini anti-drift espliciti
+- [ ] formato output finale verificabile
+- [ ] scorecard compilata
+
+## Rubrica e scorecard
+
+- Rubrica standard: `exercises/rubrics/standard-rubric.md`
+- Scorecard: `exercises/rubrics/scorecard-template.md`
+- Retrospettiva: `exercises/templates/retrospective-template.md`
+- Esempi: `exercises/examples/README.md`
+
 ## Prossimo esercizio consigliato
 
 `exercises/level-01-foundations/04-prompt-to-validation-criteria.md`

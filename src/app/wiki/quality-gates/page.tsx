@@ -9,9 +9,9 @@ export default function WikiQualityGatesPage() {
       title="Quality gates"
       description="Qui trovi le verifiche che separano una modifica incompleta da una consegna davvero chiudibile."
       purpose="Garantire coerenza tecnica e documentale con controlli chiari, ripetibili e leggibili da umani e agenti."
-      whenToUse="Usala sempre prima di chiudere task importanti, PR e release, senza eccezioni."
+      whenToUse="Apri questa pagina prima di chiudere ogni task o fase: valida con i gate che il lavoro e completo e verificabile."
       learningOutcome="Imparerai a leggere i gate come strumento decisionale, non solo come check tecnico automatico."
-      commonMistake="Eseguire solo un comando aggregato senza capire i singoli esiti: perdi segnali utili su rischi e regressioni."
+      commonMistake="Eseguire solo il comando aggregato senza analizzare i singoli esiti: perdi segnali su rischi e regressioni."
       sourceLinks={[
         { label: "Quality gates method", href: `${base}documentation/method/quality-gates.md` },
         { label: "Prompt quality gate", href: `${base}prompts/05-quality-gate.md` },

@@ -11,3 +11,10 @@
 ## Note correzione
 
 Ogni task deve avere un output verificabile.
+
+## Rubrica e scorecard
+
+- Rubrica standard: `exercises/rubrics/standard-rubric.md`
+- Scorecard: `exercises/rubrics/scorecard-template.md`
+- Retrospettiva: `exercises/templates/retrospective-template.md`
+- Esempi: `exercises/examples/README.md`

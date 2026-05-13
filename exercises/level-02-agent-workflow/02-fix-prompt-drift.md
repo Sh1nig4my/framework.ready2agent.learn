@@ -25,5 +25,19 @@ Correzioni troppo ampie.
 Registra decisione di rollback o fix incrementale.
 ## Variante avanzata
 Definisci policy "drift escalation".
+
+## Checklist di completamento
+
+- [ ] prompt correttivo focalizzato sullo scope
+- [ ] stop conditions esplicite
+- [ ] strategia anti-drift verificabile
+- [ ] scorecard compilata
+
+## Rubrica e scorecard
+
+- Rubrica standard: `exercises/rubrics/standard-rubric.md`
+- Scorecard: `exercises/rubrics/scorecard-template.md`
+- Retrospettiva: `exercises/templates/retrospective-template.md`
+- Esempi: `exercises/examples/README.md`
 ## Prossimo esercizio consigliato
 `03-task-breakdown.md`

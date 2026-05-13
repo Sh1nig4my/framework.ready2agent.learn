@@ -1,6 +1,6 @@
 # Ready2Agent Learn
 
-Versione corrente: **v1.2.2 - Guided Wiki & Agent-Safe Navigation**.
+Versione corrente: **v1.2.2 — Guided Wiki & Agent-Safe Navigation** (versione centralizzata in `documentation/product-manifest.json`).
 
 ## In una frase
 
@@ -21,6 +21,10 @@ Ready2Agent Learn nasce per insegnarti un processo verificabile:
 Non chiedere solo codice. Progetta il contesto che genera buon codice.
 
 ## Cosa puoi fare subito
+
+### First Mission (30-60 minuti) - Golden path consigliata
+
+Apri `documentation/first-mission/README.md`, compila il template `documentation/first-mission/first-mission-dossier-template.md` e produci il tuo primo `First Mission Dossier` verificabile.
 
 ### 5 minuti - Prova un prompt playground
 
@@ -52,6 +56,7 @@ Apri `workflow/README.md` e poi passa al case study in `workflow/requirements/r2
 La wiki e il livello di navigazione del repository:
 
 - index: `/wiki`
+- first mission: `/wiki/first-mission`
 - avvio rapido: `/wiki/start-here`
 - guida agenti: `/wiki/agent-guide`
 - quality gate: `/wiki/quality-gates`
@@ -107,6 +112,11 @@ npm run lint
 npm run build
 npm run typecheck
 npm run check:structure
+npm run check:prompts
+npm run check:boundary
+npm run check:routes
+npm run check:links
+npm run check:content-drift
 npm run quality
 ```
 

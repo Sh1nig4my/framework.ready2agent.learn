@@ -9,9 +9,9 @@ export default function WikiStartHerePage() {
       title="Start here"
       description="Questa pagina e il tuo primo punto di appoggio: ti dice in che ordine leggere i documenti e come partire senza perdere tempo."
       purpose="Ridurre il tempo di setup iniziale e allinearti subito su confini, metodo e regole operative del repository."
-      whenToUse="Usala all'inizio di ogni sessione, sia quando studi da solo sia quando lavori insieme a un coding agent."
-      learningOutcome="Saprai da dove iniziare, quali file sono veramente source-of-truth e come evitare un avvio confuso o fuori scope."
-      commonMistake="Partire dal codice senza leggere i documenti base: genera output veloci ma fragili e spesso incoerenti con il metodo Learn."
+      whenToUse="Apri questa pagina a ogni nuova sessione, quando devi riallinearti sull'ordine di lettura e sui confini del repository."
+      learningOutcome="Saprai quali file leggere in ordine, perche e quali sono i veri source-of-truth per non partire confuso."
+      commonMistake="Partire dal codice saltando la lettura dei documenti base: ottieni output veloci ma fragili e fuori metodo."
       sourceLinks={[
         { label: "README.md", href: `${base}README.md` },
         { label: "Agent quickstart", href: `${base}documentation/quickstart/agent_start_here.md` },

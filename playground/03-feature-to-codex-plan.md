@@ -1,21 +1,22 @@
 # Feature to Codex Plan
 
-## Quando usarlo
+## Input confuso
 
-Quando hai una feature e vuoi un piano di esecuzione adatto a Codex/OpenCode.
+"Dobbiamo aggiungere gestione ruoli e protezione route, fai un piano veloce."
 
-## Cosa ottieni
+## Prompt debole
 
-Task breakdown ordinato, dipendenze, quality gate e ordine di implementazione.
+```text
+Fammi un piano per implementare la feature.
+```
 
-## Input richiesti
+## Output mediocre
 
-- descrizione feature
-- file/cartelle coinvolte
-- vincoli tecnici
-- quality gate richiesti
+- task troppo grandi
+- dipendenze implicite
+- quality gate non esplicitati
 
-## Prompt pronto da copiare
+## Prompt migliorato (Ready2Agent)
 
 ```text
 Agisci come technical lead per coding agent.
@@ -40,25 +41,27 @@ Vincoli:
 - Priorita prima sicurezza/coerenza, poi estetica.
 ```
 
-## Output atteso
+## Output buono/eccellente
 
-Piano esecutivo riusabile in sessione di implementazione.
+- piano incrementale riusabile
+- DoD per task
+- quality gate finali chiari
 
-## Come valutare il risultato
+## Perche migliora
 
-- i task sono piccoli e ordinati?
-- ci sono dipendenze implicite non dichiarate?
-- la DoD evita ambiguita?
+- trasforma richiesta vaga in piano eseguibile
+- rende review e handoff piu semplici
+- riduce regressioni da task monolitici
 
-## Variante avanzata
+## Checklist validazione
 
-Chiedi due piani:
+- task piccoli e ordinati
+- dipendenze dichiarate
+- DoD verificabile
+- comandi quality completi
 
-- piano conservativo (rischio basso)
-- piano veloce (time-to-first-result)
+## Collegamenti utili
 
-Confronta impatti.
-
-## Prossimo step consigliato
-
-Usa `prompts/04-implementation-start.md` sul primo task del piano.
+- First Mission: `documentation/first-mission/README.md`
+- Prompt consigliato: `prompts/03-task-breakdown.md`
+- Next step: `exercises/level-02-agent-workflow/03-task-breakdown.md`

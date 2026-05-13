@@ -9,12 +9,13 @@ export default function WikiExercisesPage() {
       title="Exercises"
       description="Gli esercizi sono il ponte tra teoria e autonomia: ogni livello ti costringe a scegliere, verificare e migliorare."
       purpose="Allenarti a trasformare output agent in decisioni solide, con rubriche, tracker e feedback esplicito."
-      whenToUse="Usala dopo il playground, quando vuoi passare da prova veloce a pratica disciplinata e misurabile."
-      learningOutcome="Imparerai a riconoscere output deboli, correggere il processo e aumentare la qualita delle tue consegne."
-      commonMistake="Cercare la soluzione piu rapida senza compilare tracker e criteri: impari meno e perdi la parte formativa."
+      whenToUse="Apri questa pagina dopo il workflow, quando vuoi passare dalla teoria alla pratica disciplinata con rubriche e tracker."
+      learningOutcome="Imparerai a riconoscere output deboli, correggere il processo e misurare la qualita con rubrica, scorecard e tracker."
+      commonMistake="Cercare la soluzione rapida senza compilare tracker e criteri: perdi la parte formativa e ripeti gli stessi errori."
       sourceLinks={[
         { label: "Exercises hub", href: `${base}exercises/README.md` },
         { label: "Exercises tracker", href: `${base}exercises/tracker.md` },
+        { label: "Standard rubric", href: `${base}exercises/rubrics/standard-rubric.md` },
       ]}
       nextStep={{ label: "Vai a Case study", href: "/wiki/case-study" }}
     />

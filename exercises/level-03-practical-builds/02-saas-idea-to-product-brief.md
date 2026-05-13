@@ -30,13 +30,28 @@ Dividi brief in MVP 14 giorni e fase evolutiva.
 
 | Dimensione | 0 | 1 | 2 | 3 |
 |---|---|---|---|---|
-| Chiarezza obiettivo | assente | parziale | chiaro ma incompleto | chiaro e completo |
-| Confini scope/out-of-scope | assenti | ambigui | quasi completi | espliciti e rigorosi |
-| Qualita prompt/brief | vago | parzialmente utile | operativo con lacune | operativo e riusabile |
-| Verificabilita output | non verificabile | poco misurabile | misurabile in parte | misurabile con criteri chiari |
-| Rischi e trade-off | assenti | superficiali | presenti ma incompleti | prioritizzati con mitigazione |
-| Allineamento metodo/gate | assente | parziale | buono | completo |
+| Requirement clarity | assente | debole | buono | eccellente |
+| Scope discipline | assente | debole | buono | eccellente |
+| Prompt quality | assente | debole | buono | eccellente |
+| Agent control | assente | debole | buono | eccellente |
+| Validation | assente | debole | buono | eccellente |
+| Documentation trace | assente | debole | buono | eccellente |
 
 Punteggio totale: 0-18.
+
+## Checklist di completamento
+
+- [ ] brief con scope/out-of-scope
+- [ ] milestone e quality gate dichiarati
+- [ ] rischi prioritizzati
+- [ ] scorecard compilata
+
+## Rubrica, scorecard e retro
+
+- Rubrica standard: `exercises/rubrics/standard-rubric.md`
+- Scorecard: `exercises/rubrics/scorecard-template.md`
+- Retrospettiva: `exercises/templates/retrospective-template.md`
+- Esempi: `exercises/examples/README.md`
+
 ## Prossimo esercizio consigliato
 `03-feature-to-implementation-plan.md`

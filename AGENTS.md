@@ -47,6 +47,8 @@ Divieti espliciti:
 - login/register completo da prodotto
 - moduli business reali o codice cliente
 - billing e SaaS multi-tenant production
+- enterprise dashboard production-ready
+- login/register completo da prodotto o production-ready login
 - dipendenze non necessarie
 
 ## Editing rules
@@ -89,6 +91,11 @@ npm run lint
 npm run build
 npm run typecheck
 npm run check:structure
+npm run check:prompts
+npm run check:boundary
+npm run check:routes
+npm run check:links
+npm run check:content-drift
 npm run quality
 ```
 

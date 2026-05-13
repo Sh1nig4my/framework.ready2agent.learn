@@ -3,21 +3,23 @@ export const hero = {
   subtitle:
     "Ready2Agent Learn e il laboratorio open-source italiano-first per imparare metodo, prompt, workflow e quality gate con coding agent.",
   ctas: [
+    { label: "Inizia la First Mission", href: "/wiki/first-mission" },
     { label: "Apri la wiki", href: "/wiki" },
-    { label: "Guida coding agent", href: "/wiki/agent-guide" },
+    { label: "Guida coding agent", href: "/wiki/agent-guide" }
   ],
 };
 
 export const githubBase = "https://github.com/Sh1nig4my/framework.ready2agent.learn/blob/main/";
 
 export const quickPrompts = [
+  { label: "First Mission wiki", href: "/wiki/first-mission" },
   { label: "Playground wiki", href: "/wiki/playground" },
   { label: "Prompt system wiki", href: "/wiki/prompts" },
   { label: "Case study wiki", href: "/wiki/case-study" },
 ];
 
 export const paths = [
-  { title: "Non tecnico", start: "/wiki/start-here" },
+  { title: "Non tecnico", start: "/wiki/first-mission" },
   { title: "Founder / consulente", start: "/wiki/workflow" },
   { title: "Junior developer", start: "/wiki/exercises" },
   { title: "Developer esperto", start: "/wiki/method" },
@@ -26,6 +28,7 @@ export const paths = [
 ];
 
 export const repoMap = [
+  { label: "First Mission", href: "/wiki/first-mission" },
   { label: "README", href: "/wiki/start-here" },
   { label: "Playground", href: "/wiki/playground" },
   { label: "Exercises", href: "/wiki/exercises" },
