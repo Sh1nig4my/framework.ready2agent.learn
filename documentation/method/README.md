@@ -1,4 +1,6 @@
-# Metodo Ready2Agent Learn
+# TRACE Method — Ready2Agent Learn
+
+**TRACE** sta per **Tasks, Requirements, Agent Context, Controlled Execution**. È il metodo operativo di Ready2Agent per trasformare idee in esecuzione agentica governata attraverso task espliciti, requisiti chiari, contesto strutturato e validazione continua.
 
 Il metodo e una disciplina operativa: non elimina la complessita, ti insegna a governarla.
 

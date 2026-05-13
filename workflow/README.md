@@ -1,5 +1,7 @@
 # Workflow
 
+Il workflow e il braccio operativo del **TRACE Method** (Tasks, Requirements, Agent Context, Controlled Execution).
+
 ## Cos'e un workflow in Ready2Agent Learn
 
 Un workflow e la memoria ordinata del lavoro. Il workflow e memoria, non burocrazia: mantiene controllo umano e continuita operativa quando il lavoro passa attraverso un coding agent.

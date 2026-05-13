@@ -58,7 +58,7 @@ Nessuna. Tutte le fasi sono state completate integralmente.
 - `prompts/README.md`
 - `scripts/check-structure.mjs`
 - `src/app/page.tsx`
-- `src/content/landing.ts`
+- `src/content/public-site.ts`
 - `src/content/wiki.ts`
 - `src/app/wiki/page.tsx`
 - `src/app/wiki/*` (12 pagine wiki)

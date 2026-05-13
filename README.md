@@ -4,7 +4,7 @@ Versione corrente: **v1.2.2 — Guided Wiki & Agent-Safe Navigation** (versione 
 
 ## In una frase
 
-Ready2Agent Learn e un laboratorio open-source per imparare a progettare, guidare e validare il lavoro con coding agent attraverso metodo, prompt, workflow, esercizi, playground e quality gate.
+Ready2Agent Learn e un laboratorio open-source per imparare a progettare, guidare e validare il lavoro con coding agent attraverso il **TRACE Method**, prompt, workflow, esercizi, playground e quality gate.
 
 Modello consigliato: skills-first con skills leggere e modificabili in `.agents/skills/`.
 
@@ -14,7 +14,7 @@ Per orientamento visuale rapido apri la wiki interna: `/wiki`.
 
 Un coding agent senza metodo accelera il caos. Un coding agent guidato accelera il prodotto.
 
-Ready2Agent Learn nasce per insegnarti un processo verificabile:
+Ready2Agent Learn nasce per insegnarti il **TRACE Method** (Tasks, Requirements, Agent Context, Controlled Execution), un processo verificabile:
 
 `idea -> requisito -> contesto -> prompt -> task -> implementazione -> quality gate -> documentazione`
 
@@ -62,6 +62,20 @@ La wiki e il livello di navigazione del repository:
 - quality gate: `/wiki/quality-gates`
 
 I markdown restano source-of-truth di approfondimento.
+
+## Public web experience
+
+Il sito pubblico di Ready2Agent Learn e deployabile su Vercel ed e composto da pagine statiche:
+
+- `/` — Homepage con metodo, target, percorsi, casi d'uso e CTA
+- `/percorsi` — Curriculum pratico con 7 percorsi per profilo
+- `/wiki` — Wiki compatta del metodo con glossario
+- `/privacy` — Informativa privacy del progetto
+- `/terms` — Termini di utilizzo
+
+Navigazione pubblica: **Home · Percorsi · Wiki · GitHub**
+
+Il sito non richiede backend, database, autenticazione o tracking.
 
 ## Playground: prova subito
 
