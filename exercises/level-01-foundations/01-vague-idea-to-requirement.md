@@ -58,6 +58,20 @@ Aggiorna `exercises/tracker.md` con stato, output e note.
 
 Aggiungi roadmap in 3 fasi con dipendenze.
 
+## Checklist di completamento
+
+- [ ] requirement con obiettivo verificabile
+- [ ] in-scope e out-of-scope espliciti
+- [ ] rischi principali dichiarati
+- [ ] scorecard compilata
+
+## Rubrica e scorecard
+
+- Rubrica standard: `exercises/rubrics/standard-rubric.md`
+- Scorecard: `exercises/rubrics/scorecard-template.md`
+- Retrospettiva: `exercises/templates/retrospective-template.md`
+- Esempi: `exercises/examples/README.md`
+
 ## Prossimo esercizio consigliato
 
 `exercises/level-01-foundations/02-requirement-to-context.md`

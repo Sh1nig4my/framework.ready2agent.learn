@@ -12,12 +12,18 @@ const required = [
   "documentation/project-meta/release-definition-v1.1.2.md",
   "documentation/project-meta/editorial-style-guide.md",
   "documentation/examples/README.md",
+  "documentation/first-mission/README.md",
+  "documentation/first-mission/first-mission-dossier-template.md",
   "playground/README.md",
   "playground/01-company-to-landing-page.md",
   "playground/02-chaotic-idea-to-requirement.md",
   "playground/03-feature-to-codex-plan.md",
   "exercises/README.md",
   "exercises/tracker.md",
+  "exercises/rubrics/standard-rubric.md",
+  "exercises/rubrics/scorecard-template.md",
+  "exercises/templates/retrospective-template.md",
+  "exercises/examples/README.md",
   "workflow/README.md",
   "workflow/requirements/r2a-learn-auth-iam-case-study/00-master-requirement.md",
   "workflow/trackers/auth-iam-case-study-tracker.md",
@@ -30,8 +36,10 @@ const required = [
   "prompts/05-quality-gate.md",
   "prompts/06-documentation-alignment.md",
   "src/app/page.tsx",
-  "src/content/landing.ts",
+  "src/content/public-site.ts",
+  "src/content/paths.ts",
   "src/app/wiki/page.tsx",
+  "src/app/wiki/first-mission/page.tsx",
   "src/app/wiki/start-here/page.tsx",
   "src/app/wiki/method/page.tsx",
   "src/app/wiki/playground/page.tsx",
@@ -43,6 +51,14 @@ const required = [
   "src/app/wiki/agent-guide/page.tsx",
   "src/app/wiki/repository-map/page.tsx",
   "src/app/wiki/public-private-boundary/page.tsx",
+  "src/app/percorsi/page.tsx",
+  "src/app/privacy/page.tsx",
+  "src/app/terms/page.tsx",
+  "scripts/check-prompts.mjs",
+  "scripts/check-boundary.mjs",
+  "scripts/check-routes.mjs",
+  "scripts/check-links.mjs",
+  "scripts/check-content-drift.mjs",
 ];
 
 const missing = required.filter((item) => !existsSync(resolve(process.cwd(), item)));
@@ -63,6 +79,26 @@ const contentMarkers = [
   {
     file: "documentation/project-meta/release-definition-v1.1.2.md",
     mustInclude: ["Definition of Done"],
+  },
+  {
+    file: "src/app/page.tsx",
+    mustInclude: ["MethodFlowSection"],
+  },
+  {
+    file: "src/app/privacy/page.tsx",
+    mustInclude: ["contactEmail"],
+  },
+  {
+    file: "src/app/terms/page.tsx",
+    mustInclude: ["contactEmail"],
+  },
+  {
+    file: "src/app/wiki/page.tsx",
+    mustInclude: ["Wiki Metodo"],
+  },
+  {
+    file: "src/app/percorsi/page.tsx",
+    mustInclude: ["Scegli il percorso"],
   },
 ];
 

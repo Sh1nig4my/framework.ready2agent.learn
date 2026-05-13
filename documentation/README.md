@@ -1,6 +1,6 @@
 # Documentation Hub
 
-La cartella `documentation/` e il cuore didattico di Ready2Agent Learn. Qui non trovi solo regole: trovi un percorso per capire cosa fare, perche farlo e come evitare gli errori piu comuni quando lavori con un coding agent.
+La cartella `documentation/` e il cuore didattico di Ready2Agent Learn. Qui trovi il **TRACE Method** (Tasks, Requirements, Agent Context, Controlled Execution) e tutto il percorso per capire cosa fare, perche farlo e come evitare gli errori piu comuni quando lavori con un coding agent.
 
 ## Se sei X, leggi Y
 
@@ -16,7 +16,7 @@ La cartella `documentation/` e il cuore didattico di Ready2Agent Learn. Qui non 
 
 - `quickstart/`: guide di ingresso per profili diversi
 - `quickstart/skills-local-setup.md`: setup locale skills con OpenCode (Linux, macOS, Windows)
-- `method/`: principi operativi con checklist
+- `method/`: principi operativi del **TRACE Method** con checklist
 - `examples/`: confronti bad vs good
 - `case-study/`: materiale del caso studio Auth/IAM
 - `project-meta/`: governance e confine pubblico/privato

@@ -1,50 +1,84 @@
 # Prompt 01 - Requirement Analysis
 
-## A cosa serve
+## Purpose
 
-Trasforma il requirement master in comprensione operativa concreta.
+Trasformare una richiesta grezza in un requirement chiaro, verificabile e pronto per pianificazione architetturale.
 
-## Quando usarlo
+## When to use
 
-- dopo onboarding
-- prima di proporre architettura o task
+- dopo l'onboarding
+- prima di architettura e task breakdown
+- ogni volta che l'obiettivo e ancora ambiguo
 
-## File da leggere prima
+## Required context
 
-- requirement master
+- richiesta utente o requirement master
 - `documentation/method/README.md`
 - `documentation/R2A_LEARN_full-ai-context.md`
+- `documentation/project-meta/public-private-boundary.md`
 
-## Prompt da copiare nell'agente
+## Role
 
-```text
-Analizza il requirement master del caso studio Auth/IAM in Ready2Agent Learn.
-Non scrivere codice.
+Agisci come requirement analyst orientato a chiarezza, confini e verificabilita didattica.
+
+## Task
+
+Analizza il requirement e restituisci una versione operativa pronta per i passaggi successivi, senza implementare codice.
+
+## Inputs
+
+- testo richiesta raw
+- eventuali vincoli di dominio
+- contesto repository Learn
+
+## Output contract
 
 Restituisci:
-- summary
-- assumptions
-- open questions
-- risks
-- implementation boundaries
-- suggested task groups
-```
 
-## Output atteso
+1. raw request summary
+2. clarified objective
+3. attori principali
+4. vincoli espliciti
+5. in-scope
+6. out-of-scope
+7. assunzioni
+8. rischi
+9. acceptance criteria
+10. open questions
+11. recommended defaults
 
-Analisi strutturata, con confini chiari e rischi espliciti.
+## Quality bar
 
-## Checklist per l'umano
+- obiettivo riscrivibile in termini verificabili
+- acceptance criteria concreti e testabili
+- open questions mirate, non generiche
+- default raccomandati conservativi e coerenti con Learn
 
-- l'analisi rispetta out-of-scope
-- i rischi non sono generici
-- i task groups sono realistici
+## Anti-drift rules
 
-## Errori comuni
+- non passare a design/implementazione in questa fase
+- non introdurre scope enterprise
+- non lasciare out-of-scope implicito
 
-- confondere requirement con implementazione
-- ignorare vincoli di sicurezza
+## Stop conditions
 
-## Passaggio successivo
+Fermati se:
+
+- mancano vincoli critici che cambiano materialmente l'esito
+- la richiesta confligge con boundary pubblico/privato
+
+## Self-check
+
+- ho distinto requirement da soluzione?
+- ho esplicitato criteri di accettazione verificabili?
+- ho proposto default sensati dove serve?
+
+## Human review checklist
+
+- analisi completa rispetto al contratto output
+- rischi specifici e non cosmetici
+- confini compatibili con il repository didattico
+
+## Next step
 
 Usa `02-architecture-planning.md`.

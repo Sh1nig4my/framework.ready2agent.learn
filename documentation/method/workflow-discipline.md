@@ -1,4 +1,6 @@
-# Workflow Discipline
+# Workflow Discipline (TRACE Method)
+
+La workflow discipline implementa la **E** (Execution) del **TRACE Method**: trasforma task breakdown in esecuzione ordinata, verificabile e tracciabile.
 
 ## Cosa significa
 

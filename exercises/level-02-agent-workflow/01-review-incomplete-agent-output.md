@@ -26,5 +26,19 @@ Dire solo "manca qualcosa".
 Aggiorna errori/correzioni.
 ## Variante avanzata
 Classifica gap per severita.
+
+## Checklist di completamento
+
+- [ ] gap prioritizzati per severita
+- [ ] richiesta revisione concreta e azionabile
+- [ ] nessun feedback generico
+- [ ] scorecard compilata
+
+## Rubrica e scorecard
+
+- Rubrica standard: `exercises/rubrics/standard-rubric.md`
+- Scorecard: `exercises/rubrics/scorecard-template.md`
+- Retrospettiva: `exercises/templates/retrospective-template.md`
+- Esempi: `exercises/examples/README.md`
 ## Prossimo esercizio consigliato
 `02-fix-prompt-drift.md`

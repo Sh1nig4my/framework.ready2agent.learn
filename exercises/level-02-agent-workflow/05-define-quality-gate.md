@@ -25,5 +25,19 @@ Saltare gate documentali.
 Registra gate passati/falliti.
 ## Variante avanzata
 Aggiungi policy per gestione fallimenti.
+
+## Checklist di completamento
+
+- [ ] gate tecnici, strutturali e documentali definiti
+- [ ] esito pass/fail tracciabile
+- [ ] piano fix in caso di failure
+- [ ] scorecard compilata
+
+## Rubrica e scorecard
+
+- Rubrica standard: `exercises/rubrics/standard-rubric.md`
+- Scorecard: `exercises/rubrics/scorecard-template.md`
+- Retrospettiva: `exercises/templates/retrospective-template.md`
+- Esempi: `exercises/examples/README.md`
 ## Prossimo esercizio consigliato
 `exercises/level-03-practical-builds/01-company-landing-page.md`

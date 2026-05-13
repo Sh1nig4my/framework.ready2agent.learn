@@ -4,6 +4,11 @@
 
 Gli esercizi di Learn non servono a produrre output "belli". Servono a prendere decisioni sotto vincoli, misurare la qualita e governare un coding agent.
 
+Baseline consigliata prima dei livelli 1-4: completa la First Mission e produci un `First Mission Dossier`.
+
+- guida: `documentation/first-mission/README.md`
+- template: `documentation/first-mission/first-mission-dossier-template.md`
+
 ## Differenza tra playground ed esercizi
 
 - Playground: primo impatto, risultati veloci, bassa frizione.
@@ -41,6 +46,13 @@ Dopo ogni esercizio, aggiorna:
 - Soluzioni complete: solo livelli 1 e 2 (`exercises/solutions/`).
 - Livelli 3 e 4: usa rubriche e checklist, senza soluzione completa.
 
+Rubrica e template condivisi:
+
+- `exercises/rubrics/standard-rubric.md`
+- `exercises/rubrics/scorecard-template.md`
+- `exercises/templates/retrospective-template.md`
+- `exercises/examples/README.md`
+
 ## Rubriche numeriche livelli 3-4
 
 Ogni esercizio livello 3 e 4 include una rubrica docente `0-3` su 6 dimensioni (totale `0-18`).
@@ -51,6 +63,13 @@ Ogni esercizio livello 3 e 4 include una rubrica docente `0-3` su 6 dimensioni (
 - `17-18`: eccellente
 
 Registra il punteggio in `exercises/tracker.md` subito dopo la correzione.
+
+## Baseline obbligatoria consigliata
+
+Prima di affrontare il percorso completo livelli 1-4, completa la First Mission:
+
+- `documentation/first-mission/README.md`
+- `documentation/first-mission/first-mission-dossier-template.md`
 
 ## Come evitare output passivi
 

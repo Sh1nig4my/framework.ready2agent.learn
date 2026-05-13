@@ -9,7 +9,12 @@
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
     "check:structure": "node scripts/check-structure.mjs",
-    "quality": "npm run lint && npm run build && npm run typecheck && npm run check:structure"
+    "check:prompts": "node scripts/check-prompts.mjs",
+    "check:boundary": "node scripts/check-boundary.mjs",
+    "check:routes": "node scripts/check-routes.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "check:content-drift": "node scripts/check-content-drift.mjs",
+    "quality": "npm run lint && npm run build && npm run typecheck && npm run check:structure && npm run check:prompts && npm run check:boundary && npm run check:routes && npm run check:links && npm run check:content-drift"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.2.1",

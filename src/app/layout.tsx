@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
+import { PublicHeader } from "@/components/public/PublicHeader";
+import { PublicFooter } from "@/components/public/PublicFooter";
+import { FirstVisitNotice } from "@/components/public/FirstVisitNotice";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Ready2Agent Learn",
+  title: "Ready2Agent Learn — Metodo, prompt e workflow per coding agent",
   description:
-    "Laboratorio open-source per imparare a progettare applicazioni Next.js AI-native con agenti di coding, workflow tracciati e prompt strutturati.",
+    "Laboratorio italiano-first per imparare a trasformare idee confuse in requisiti, prompt, task, automazioni, MVP e quality gate con coding agent.",
   applicationName: "Ready2Agent Learn",
   icons: {
     icon: "/ready2agent-logo-nobg.png",
@@ -30,11 +33,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html data-scroll-behavior="smooth" lang="it">
+    <html lang="it">
       <body
-        className={`${bodyFont.variable} ${headingFont.variable} min-h-screen bg-[var(--bg-base)] text-[var(--text-primary)] antialiased`}
+        className={`${bodyFont.variable} ${headingFont.variable} min-h-screen bg-[var(--surface-background)] text-[var(--text-primary)] antialiased`}
       >
+        <PublicHeader />
         {children}
+        <PublicFooter />
+        <FirstVisitNotice />
       </body>
     </html>
   );

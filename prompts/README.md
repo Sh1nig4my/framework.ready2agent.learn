@@ -2,7 +2,27 @@
 
 ## Perche esiste questa cartella
 
-I prompt sono strumenti operativi. Ogni prompt deve dire ruolo, input, output e controlli.
+I prompt sono contratti operativi agent-safe. Ogni prompt principale `00-06` usa la stessa struttura verificabile.
+
+Il prompt non e la richiesta: e il contratto operativo.
+
+## Struttura standard (Prompt Contract)
+
+Ogni prompt principale include sempre:
+
+1. `Purpose`
+2. `When to use`
+3. `Required context`
+4. `Role`
+5. `Task`
+6. `Inputs`
+7. `Output contract`
+8. `Quality bar`
+9. `Anti-drift rules`
+10. `Stop conditions`
+11. `Self-check`
+12. `Human review checklist`
+13. `Next step`
 
 ## Relazione con playground
 
@@ -11,6 +31,11 @@ Il playground ti da il primo risultato rapido. I prompt `00-06` trasformano quel
 ## Relazione con exercises
 
 Gli esercizi richiedono uso disciplinato dei prompt e aggiornamento tracker.
+
+Prima di usare la sequenza completa `00-06`, e consigliato completare la First Mission:
+
+- `documentation/first-mission/README.md`
+- `documentation/first-mission/first-mission-dossier-template.md`
 
 ## Come usare i prompt
 
@@ -26,17 +51,21 @@ Gli esercizi richiedono uso disciplinato dei prompt e aggiornamento tracker.
 
 | Prompt | Quando usarlo | Cosa produce | Input consigliati | Output atteso |
 |---|---|---|---|---|
-| `00-agent-onboarding.md` | Avvio sessione | piano operativo | source-of-truth | scope + rischi + piano |
-| `01-requirement-analysis.md` | Analisi richiesta | requirement chiarito | requirement/input business | obiettivo + confini + rischi |
-| `02-architecture-planning.md` | Prima dei task | piano architettura | analisi + metodo | confini + componenti + trade-off |
-| `03-task-breakdown.md` | Prima del codice | backlog task | architettura + requisito | task + dipendenze + DoD |
-| `04-implementation-start.md` | Task in corso | implementazione scoped | task + file target | cambi + motivazione + check |
-| `05-quality-gate.md` | Fine iterazione | validazione | diff + output comandi | pass/fail + fix plan |
-| `06-documentation-alignment.md` | Chiusura ciclo | documentazione allineata | codice + workflow | aggiornamenti coerenti |
+| `00-agent-onboarding.md` | Avvio sessione | allineamento operativo | source-of-truth + richiesta | scope, confini, rischi, piano, stop conditions |
+| `01-requirement-analysis.md` | Analisi richiesta | requirement chiarito | richiesta raw + vincoli | objective, scope, rischi, acceptance criteria |
+| `02-architecture-planning.md` | Prima dei task | blueprint didattico | output 01 + boundary | confini, componenti, trade-off, quality risks |
+| `03-task-breakdown.md` | Prima del codice | task plan incrementale | output 01-02 | task, dipendenze, DoD, gate, rischio drift |
+| `04-implementation-start.md` | Task in corso | implementazione scoped | task + file target | cambi, file toccati, trade-off, gate |
+| `05-quality-gate.md` | Fine iterazione | validazione completa | diff + stato repo | lint/build/typecheck/check:structure/quality |
+| `06-documentation-alignment.md` | Chiusura ciclo | riallineamento docs | output 05 + docs | update coerenti, gap residui, boundary check |
 
 ## Sequenza consigliata
 
 Onboarding -> Requirement Analysis -> Architecture Planning -> Task Breakdown -> Implementation -> Quality Gate -> Documentation Alignment
+
+Collegamento consigliato:
+
+`First Mission` -> Prompt `00 -> 06` -> Exercises/Workflow.
 
 ## Quando usare workflow-maintenance
 
@@ -134,6 +163,7 @@ Output:
 - ignorare quality gate
 - non aggiornare documentazione
 - non definire output atteso
+- usare prompt senza rispettare il contratto completo
 
 ## Come valutare output
 

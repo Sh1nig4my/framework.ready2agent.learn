@@ -1,10 +1,10 @@
 # Ready2Agent Learn
 
-Versione corrente: **v1.2.2 - Guided Wiki & Agent-Safe Navigation**.
+Versione corrente: **v1.2.2 — Guided Wiki & Agent-Safe Navigation** (versione centralizzata in `documentation/product-manifest.json`).
 
 ## In una frase
 
-Ready2Agent Learn e un laboratorio open-source per imparare a progettare, guidare e validare il lavoro con coding agent attraverso metodo, prompt, workflow, esercizi, playground e quality gate.
+Ready2Agent Learn e un laboratorio open-source per imparare a progettare, guidare e validare il lavoro con coding agent attraverso il **TRACE Method**, prompt, workflow, esercizi, playground e quality gate.
 
 Modello consigliato: skills-first con skills leggere e modificabili in `.agents/skills/`.
 
@@ -14,13 +14,17 @@ Per orientamento visuale rapido apri la wiki interna: `/wiki`.
 
 Un coding agent senza metodo accelera il caos. Un coding agent guidato accelera il prodotto.
 
-Ready2Agent Learn nasce per insegnarti un processo verificabile:
+Ready2Agent Learn nasce per insegnarti il **TRACE Method** (Tasks, Requirements, Agent Context, Controlled Execution), un processo verificabile:
 
 `idea -> requisito -> contesto -> prompt -> task -> implementazione -> quality gate -> documentazione`
 
 Non chiedere solo codice. Progetta il contesto che genera buon codice.
 
 ## Cosa puoi fare subito
+
+### First Mission (30-60 minuti) - Golden path consigliata
+
+Apri `documentation/first-mission/README.md`, compila il template `documentation/first-mission/first-mission-dossier-template.md` e produci il tuo primo `First Mission Dossier` verificabile.
 
 ### 5 minuti - Prova un prompt playground
 
@@ -52,11 +56,26 @@ Apri `workflow/README.md` e poi passa al case study in `workflow/requirements/r2
 La wiki e il livello di navigazione del repository:
 
 - index: `/wiki`
+- first mission: `/wiki/first-mission`
 - avvio rapido: `/wiki/start-here`
 - guida agenti: `/wiki/agent-guide`
 - quality gate: `/wiki/quality-gates`
 
 I markdown restano source-of-truth di approfondimento.
+
+## Public web experience
+
+Il sito pubblico di Ready2Agent Learn e deployabile su Vercel ed e composto da pagine statiche:
+
+- `/` — Homepage con metodo, target, percorsi, casi d'uso e CTA
+- `/percorsi` — Curriculum pratico con 7 percorsi per profilo
+- `/wiki` — Wiki compatta del metodo con glossario
+- `/privacy` — Informativa privacy del progetto
+- `/terms` — Termini di utilizzo
+
+Navigazione pubblica: **Home · Percorsi · Wiki · GitHub**
+
+Il sito non richiede backend, database, autenticazione o tracking.
 
 ## Playground: prova subito
 
@@ -107,6 +126,11 @@ npm run lint
 npm run build
 npm run typecheck
 npm run check:structure
+npm run check:prompts
+npm run check:boundary
+npm run check:routes
+npm run check:links
+npm run check:content-drift
 npm run quality
 ```
 

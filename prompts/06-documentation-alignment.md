@@ -1,56 +1,86 @@
 # Prompt 06 - Documentation Alignment
 
-## A cosa serve
+## Purpose
 
-Assicura coerenza tra codice, workflow, prompt e documentazione.
+Mantenere coerenza tra implementazione, workflow e materiali didattici, evitando drift informativo tra README, wiki e markdown.
 
-## Quando usarlo
+## When to use
 
 - dopo quality gate
-- quando una modifica cambia comportamento o percorso d'uso
+- quando cambia comportamento, percorso o navigazione
+- prima di chiudere fase/task rilevante
 
-## File da leggere prima
+## Required context
 
-- `README.md`
-- `documentation/README.md`
-- `documentation/quickstart/*`
-- `workflow/README.md`
-- `prompts/README.md`
-- `documentation/R2A_LEARN_full-ai-context.md`
+- diff finale
+- output prompt 05
+- documentazione core del repository
 
-## Prompt da copiare nell'agente
+## Role
 
-```text
-Riallinea la documentazione di Ready2Agent Learn al codice corrente.
+Agisci come documentation alignment reviewer con focus su chiarezza operativa e confini Learn.
 
-Verifica:
-- README principale
-- quickstart
-- workflow
-- prompt
-- full AI context
+## Task
 
-Output:
+Verifica e riallinea i documenti necessari senza duplicazione inutile e senza introdurre narrativa enterprise.
+
+## Inputs
+
+- stato aggiornato codice/docs
+- source-of-truth hierarchy del repository
+
+## Output contract
+
+Controlla esplicitamente e riporta esito per:
+
+1. `README.md`
+2. wiki (`src/content/wiki.ts` e pagine principali)
+3. `playground/README.md`
+4. `exercises/README.md` e `exercises/tracker.md` (se impattato)
+5. `prompts/README.md`
+6. `workflow/README.md`
+7. tracker workflow rilevanti (se impattati)
+8. source-of-truth principali
+9. link principali
+10. boundary pubblico/privato
+
+In output includi:
+
 - file aggiornati
-- motivazione modifiche
-- eventuali gap residui
-```
+- motivazione tecnica/editoriale
+- gap residui
 
-## Output atteso
+## Quality bar
 
-Documentazione coerente, chiara e senza link rotti.
+- ruoli distinti: homepage orienta, wiki guida, markdown approfondiscono
+- link principali coerenti e non rotti
+- linguaggio sobrio, verificabile, no hype
 
-## Checklist per l'umano
+## Anti-drift rules
 
-- testo coerente con identita Learn
-- riferimenti interni validi
-- nessuna narrativa enterprise reintrodotta
+- non duplicare integralmente i markdown nella wiki
+- non lasciare riferimenti disallineati ai quality gate
+- non reintrodurre scope enterprise in copy o esempi
 
-## Errori comuni
+## Stop conditions
 
-- aggiornare solo codice e non documentazione
-- lasciare quickstart incoerenti con workflow
+Fermati se:
 
-## Passaggio successivo
+- il riallineamento richiede decisione di prodotto non deducibile dal contesto
+- ci sono conflitti tra source-of-truth non risolvibili localmente
 
-Torna al prompt 00 per una nuova iterazione o chiudi il ciclo.
+## Self-check
+
+- ho verificato tutti i nodi richiesti dal contratto?
+- ho aggiornato solo dove necessario?
+- ho dichiarato eventuali gap residui?
+
+## Human review checklist
+
+- coerenza tra codice e documentazione
+- confine pubblico/privato preservato
+- next step chiaro (nuovo ciclo o chiusura)
+
+## Next step
+
+Torna a `00-agent-onboarding.md` per nuova iterazione o chiudi il ciclo corrente.

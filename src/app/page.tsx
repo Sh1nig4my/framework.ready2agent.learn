@@ -1,65 +1,27 @@
-import { CaseStudySection } from "@/components/landing/case-study-section";
-import { ConsultingSection } from "@/components/landing/consulting-section";
-import { ExercisesSection } from "@/components/landing/exercises-section";
-import { HeroSection } from "@/components/landing/hero-section";
-import { LearningPathsSection } from "@/components/landing/learning-paths-section";
-import { PlaygroundSection } from "@/components/landing/playground-section";
-import { RepositoryMapSection } from "@/components/landing/repository-map-section";
-import { WorkflowSection } from "@/components/landing/workflow-section";
-import { sourceOfTruthLinks } from "@/content/landing";
+import { HeroSection } from "@/components/public/sections/HeroSection";
+import { ProblemSection } from "@/components/public/sections/ProblemSection";
+import { PromiseSection } from "@/components/public/sections/PromiseSection";
+import { MethodFlowSection } from "@/components/public/sections/MethodFlowSection";
+import { TargetSection } from "@/components/public/sections/TargetSection";
+import { UseCasesSection } from "@/components/public/sections/UseCasesSection";
+import { PathsPreviewSection } from "@/components/public/sections/PathsPreviewSection";
+import { FrameworkOriginSection } from "@/components/public/sections/FrameworkOriginSection";
+import { OpenSourceSection } from "@/components/public/sections/OpenSourceSection";
+import { FinalCtaSection } from "@/components/public/sections/FinalCtaSection";
 
 export default function HomePage() {
   return (
-    <main className="r2a-page">
+    <main className="public-page">
       <HeroSection />
-
-      <section className="r2a-card" id="why">
-        <p className="r2a-badge">Guided Wiki</p>
-        <h2>Perche esiste</h2>
-        <p>
-          Senza metodo, gli agenti accelerano confusione. Con metodo, trasformi idea confusa in requisito, prompt, task e quality
-          gate.
-        </p>
-        <div className="r2a-row">
-          <a className="r2a-btn r2a-btn-primary" href="/wiki">
-            Vai alla wiki
-          </a>
-          <a className="r2a-btn" href="/wiki/quality-gates">
-            Quality gates
-          </a>
-        </div>
-      </section>
-
-      <PlaygroundSection />
-      <LearningPathsSection />
-      <ExercisesSection />
-      <WorkflowSection />
-      <CaseStudySection />
-      <RepositoryMapSection />
-
-      <section className="r2a-card" id="boundary">
-        <h2>Public/private boundary</h2>
-        <p>Learn e prodotto didattico: niente backend reale, niente DB reale, niente runtime enterprise privato.</p>
-        <a className="r2a-btn" href="/wiki/public-private-boundary">
-          Leggi il boundary completo
-        </a>
-      </section>
-
-      <section className="r2a-card" id="sources">
-        <h2>Source-of-truth</h2>
-        <p>La homepage orienta. La wiki guida. I markdown restano i documenti di riferimento.</p>
-        <ul>
-          {sourceOfTruthLinks.map((item) => (
-            <li key={item.href}>
-              <a href={item.href} target="_blank" rel="noreferrer">
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <ConsultingSection />
+      <ProblemSection />
+      <PromiseSection />
+      <MethodFlowSection />
+      <TargetSection />
+      <UseCasesSection />
+      <PathsPreviewSection />
+      <FrameworkOriginSection />
+      <OpenSourceSection />
+      <FinalCtaSection />
     </main>
   );
 }

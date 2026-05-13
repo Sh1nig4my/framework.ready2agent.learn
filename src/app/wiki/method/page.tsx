@@ -9,14 +9,14 @@ export default function WikiMethodPage() {
       title="Method"
       description="Qui trovi la logica completa del metodo Ready2Agent: trasformare una richiesta vaga in un percorso operativo verificabile."
       purpose="Spiegare come applicare in pratica la sequenza idea -> requisito -> contesto -> prompt -> task -> implementazione -> quality gate -> documentazione."
-      whenToUse="Usala prima di aprire task implementativi, quando devi chiarire obiettivo, scope, out-of-scope e criteri di verifica."
-      learningOutcome="Imparerai a prendere decisioni migliori prima di scrivere codice, riducendo correzioni tardive e ambiguita operative."
-      commonMistake="Saltare i passaggi intermedi e chiedere subito implementazione completa: il risultato tende a essere poco controllabile."
+      whenToUse="Apri questa pagina prima di qualsiasi task implementativo, quando devi chiarire obiettivo, scope e criteri di verifica."
+      learningOutcome="Imparerai a prendere decisioni migliori prima del codice, riducendo correzioni e ambiguita operative."
+      commonMistake="Chiedere subito implementazione saltando i passaggi intermedi: produci risultati difficili da validare."
       sourceLinks={[
         { label: "Method hub", href: `${base}documentation/method/README.md` },
         { label: "AI context esteso", href: `${base}documentation/R2A_LEARN_full-ai-context.md` },
       ]}
-      nextStep={{ label: "Vai a Playground", href: "/wiki/playground" }}
+      nextStep={{ label: "Riprova la First Mission", href: "/wiki/first-mission" }}
     />
   );
 }

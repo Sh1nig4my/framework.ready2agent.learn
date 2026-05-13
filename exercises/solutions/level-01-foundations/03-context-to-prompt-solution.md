@@ -7,3 +7,10 @@ Ruolo: senior coding agent. Task: implementare shell dashboard didattica su file
 ## Note correzione
 
 Verifica presenza di output atteso e quality check espliciti.
+
+## Rubrica e scorecard
+
+- Rubrica standard: `exercises/rubrics/standard-rubric.md`
+- Scorecard: `exercises/rubrics/scorecard-template.md`
+- Retrospettiva: `exercises/templates/retrospective-template.md`
+- Esempi: `exercises/examples/README.md`

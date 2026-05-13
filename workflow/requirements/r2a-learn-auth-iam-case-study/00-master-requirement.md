@@ -34,6 +34,31 @@ Auth/IAM e ideale per imparare perche:
 - policy server-side
 - validazione input
 
+## 4.1) Modello didattico a tre livelli (obbligatorio)
+
+Il case study Auth/IAM in Learn usa un modello esplicito a tre livelli. Questo evita confusione tra palestra didattica e runtime enterprise.
+
+### Level A - Conceptual
+
+- requirement, ruoli, permessi, policy, contratti e rischi
+- checklist e criteri di verifica
+- nessuna implementazione runtime obbligatoria
+
+### Level B - Mocked implementation
+
+- UI shell didattica
+- dati statici/mock
+- policy simulate e verificabili
+- nessun database reale
+- nessun NextAuth
+- nessun runtime enterprise
+
+### Level C - Transfer to private runtime
+
+- spiegazione concettuale di come il metodo si trasferisce nel framework operativo privato
+- nessun codice privato
+- nessuna dipendenza enterprise importata
+
 ## 5) Out of scope
 
 - runtime enterprise completo
@@ -43,6 +68,9 @@ Auth/IAM e ideale per imparare perche:
 - integrazioni cliente
 - audit avanzato production
 - deploy production vincolante
+- implementazione runtime enterprise reale
+- login/register production-ready come prodotto
+- introduzione DB reale o auth provider enterprise
 
 ## 6) Glossario accessibile
 
@@ -143,64 +171,83 @@ Auth/IAM e ideale per imparare perche:
 - obiettivo: predisporre skeleton e confini
 - input: requirement master
 - output: struttura cartelle coerente
-- prompt consigliato: `00-agent-onboarding.md`
+- livello: Level A (Conceptual)
+- prompt consigliato: `prompts/00-agent-onboarding.md`
 - criterio completamento: struttura leggibile e documentata
 
 ### Fase 2 - definire contratti
 - obiettivo: stabilire payload e tipi
 - input: fase 1 + scope funzionale
 - output: contratti shared iniziali
-- prompt consigliato: `02-architecture-planning.md`
+- livello: Level A (Conceptual)
+- prompt consigliato: `prompts/02-architecture-planning.md`
 - criterio completamento: contratti chiari e riusabili
 
 ### Fase 3 - modellare utenti e profili
 - obiettivo: definire modello dati didattico
 - input: contratti
 - output: schema concettuale user/profile/role
-- prompt consigliato: `03-task-breakdown.md`
+- livello: Level A (Conceptual)
+- prompt consigliato: `prompts/03-task-breakdown.md`
 - criterio completamento: modello coerente con scope
 
 ### Fase 4 - progettare auth
 - obiettivo: definire flusso autenticazione
 - input: modelli + policy
 - output: blueprint auth foundation
-- prompt consigliato: `02-architecture-planning.md`
+- livello: Level A (Conceptual)
+- prompt consigliato: `prompts/02-architecture-planning.md`
 - criterio completamento: confini auth espliciti
 
 ### Fase 5 - login/logout
 - obiettivo: implementare flussi base accesso/uscita
 - input: blueprint auth
 - output: task implementativi verticali
-- prompt consigliato: `04-implementation-start.md`
+- livello: Level B (Mocked implementation)
+- prompt consigliato: `prompts/04-implementation-start.md`
 - criterio completamento: comportamento tracciato e validato
 
 ### Fase 6 - ruoli e permessi
 - obiettivo: enforcement policy
 - input: modello ruoli
 - output: regole autorizzazione server-side
-- prompt consigliato: `04-implementation-start.md`
+- livello: Level B (Mocked implementation)
+- prompt consigliato: `prompts/04-implementation-start.md`
 - criterio completamento: permessi verificabili
 
 ### Fase 7 - dashboard shell
 - obiettivo: shell didattica area riservata
 - input: auth + policy
 - output: UI base coerente con ruoli
-- prompt consigliato: `04-implementation-start.md`
+- livello: Level B (Mocked implementation)
+- prompt consigliato: `prompts/04-implementation-start.md`
 - criterio completamento: shell senza logica enterprise
 
 ### Fase 8 - quality gate
 - obiettivo: validare stabilita
 - input: change set corrente
 - output: esiti lint/build/typecheck
-- prompt consigliato: `05-quality-gate.md`
+- livello: Level B (Mocked implementation)
+- prompt consigliato: `prompts/05-quality-gate.md`
 - criterio completamento: gate superati o piano fix chiaro
 
 ### Fase 9 - documentazione
 - obiettivo: allineamento finale
 - input: codice + workflow
 - output: documentazione aggiornata senza drift
-- prompt consigliato: `06-documentation-alignment.md`
+- livello: Level C (Transfer to private runtime)
+- prompt consigliato: `prompts/06-documentation-alignment.md`
 - criterio completamento: link e contenuto coerenti
+
+## 11.1) Stop conditions anti-deriva
+
+Fermare il lavoro e riallineare se emerge uno di questi segnali:
+
+- proposta di database reale obbligatorio
+- introduzione NextAuth o auth production-ready non didattica
+- richiesta di dashboard enterprise completa
+- confusione tra mock didattico e runtime privato
+- scope che supera i confini Learn senza decisione esplicita
 
 ## 12) Errori comuni da evitare
 

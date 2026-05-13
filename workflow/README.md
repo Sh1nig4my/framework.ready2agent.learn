@@ -1,8 +1,10 @@
 # Workflow
 
+Il workflow e il braccio operativo del **TRACE Method** (Tasks, Requirements, Agent Context, Controlled Execution).
+
 ## Cos'e un workflow in Ready2Agent Learn
 
-Un workflow e la memoria ordinata del lavoro. Non e burocrazia: e lo strumento che mantiene controllo umano e continuita operativa quando il lavoro passa attraverso un coding agent.
+Un workflow e la memoria ordinata del lavoro. Il workflow e memoria, non burocrazia: mantiene controllo umano e continuita operativa quando il lavoro passa attraverso un coding agent.
 
 ## Perche serve
 
@@ -34,6 +36,12 @@ workflow/
 ## Caso studio presente
 
 Il workflow attuale ruota intorno al caso Auth/IAM didattico. L'obiettivo non e consegnare una piattaforma completa, ma insegnare come costruire e validare un sistema progressivamente.
+
+Modello esplicito del case study:
+
+- Level A - Conceptual
+- Level B - Mocked implementation
+- Level C - Transfer to private runtime (concettuale)
 
 ## Come usare il workflow con Codex
 

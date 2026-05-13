@@ -28,7 +28,7 @@ Inizia da:
 ## Passare dalla lettura alla pratica
 
 1. scegli un obiettivo piccolo del caso studio
-2. usa il prompt `00-agent-onboarding.md`
+2. usa il prompt `prompts/00-agent-onboarding.md`
 3. passa a `01` e `02` per analisi/architettura
 4. crea task con `03`
 5. implementa con `04`

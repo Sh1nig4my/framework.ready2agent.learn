@@ -2,7 +2,17 @@
 
 ## Identita estesa del repository
 
-Ready2Agent Learn e un laboratorio open-source progettato per insegnare come trasformare idee software confuse in un processo eseguibile da agenti di coding. Non e un prodotto enterprise pronto: e un ambiente formativo dove metodo, prompt, workflow e validazione hanno la stessa importanza del codice.
+Ready2Agent Learn e un laboratorio open-source progettato per insegnare come trasformare idee software confuse in un processo eseguibile da agenti di coding. Non e un prodotto enterprise pronto: e un ambiente formativo dove **TRACE Method**, prompt, workflow e validazione hanno la stessa importanza del codice.
+
+## TRACE Method
+
+**Ready2Agent e il framework. TRACE e il metodo.**
+
+TRACE (Tasks, Requirements, Agent Context, Controlled Execution) e il metodo operativo che trasforma requisiti in esecuzione agentica governata: task espliciti, contesto strutturato, output revisionabili, documentazione viva.
+
+La sequenza operativa e:
+
+`idea -> requisito -> contesto -> prompt -> task -> implementazione -> quality gate -> documentazione`
 
 ## Pubblico target
 
@@ -89,9 +99,14 @@ Quando una richiesta e ambigua ma non bloccante, scegliere il default piu conser
 - `npm run build`
 - `npm run typecheck`
 - `npm run check:structure`
+- `npm run check:prompts`
+- `npm run check:boundary`
+- `npm run check:routes`
+- `npm run check:links`
+- `npm run check:content-drift`
 - `npm run quality`
 
-`npm run quality` aggrega i principali controlli; in chiusura task/release riportare anche gli esiti dei singoli comandi.
+`npm run quality` aggrega tutti i controlli; in chiusura task/release riportare anche gli esiti dei singoli comandi.
 
 ## Source-of-truth hierarchy
 

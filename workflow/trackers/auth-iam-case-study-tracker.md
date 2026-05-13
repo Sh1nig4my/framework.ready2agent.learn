@@ -2,17 +2,17 @@
 
 ## Stato fasi
 
-| Fase | Obiettivo | Stato | Output | Decisioni | Rischi | Quality gate | Prossimi step |
-|---|---|---|---|---|---|---|---|
-| Struttura | Predisporre skeleton e confini | TODO | - | - | Scope creep | - | Definire cartelle target |
-| Contratti | Definire payload condivisi | TODO | - | - | Contratti ambigui | - | Elenco contratti minimi |
-| Utenti/Profili | Modellazione concettuale | TODO | - | - | Ruoli sovrapposti | - | Matrice ruolo/profilo |
-| Auth blueprint | Disegno flusso auth didattico | TODO | - | - | Confusione UI/server | - | Mappa controlli server-side |
-| Login/Logout | Flussi base tracciati | TODO | - | - | Sessione incoerente | - | Sequenza task verticali |
-| Ruoli/Permessi | Enforcement policy | TODO | - | - | Privilegi eccessivi | - | Validare least privilege |
-| Dashboard shell | UI didattica area riservata | TODO | - | - | Simulazione troppo enterprise | - | Limitare a shell mock |
-| Quality gate | Validazione tecnica/strutturale | TODO | - | - | Gate incompleti | - | Eseguire quality completo |
-| Documentazione | Allineamento finale documentazione | TODO | - | - | Drift tra file | - | Review link e coerenza |
+| Fase | Livello (A/B/C) | Obiettivo | Stato | Tipo output | Decisioni | Rischio principale | Risk enterprise drift | Quality gate | Prossimi step |
+|---|---|---|---|---|---|---|---|---|---|
+| Struttura | A | Predisporre skeleton e confini | TODO | Concettuale | - | Scope creep | Medio | - | Definire cartelle target |
+| Contratti | A | Definire payload condivisi | TODO | Concettuale | - | Contratti ambigui | Medio | - | Elenco contratti minimi |
+| Utenti/Profili | A | Modellazione concettuale | TODO | Concettuale | - | Ruoli sovrapposti | Medio | - | Matrice ruolo/profilo |
+| Auth blueprint | A | Disegno flusso auth didattico | TODO | Concettuale | - | Confusione UI/server | Medio | - | Mappa controlli server-side |
+| Login/Logout | B | Flussi base tracciati | TODO | Mocked | - | Sessione incoerente | Alto | - | Sequenza task verticali |
+| Ruoli/Permessi | B | Enforcement policy | TODO | Mocked | - | Privilegi eccessivi | Alto | - | Validare least privilege |
+| Dashboard shell | B | UI didattica area riservata | TODO | Mocked | - | Simulazione troppo enterprise | Alto | - | Limitare a shell mock |
+| Quality gate | B | Validazione tecnica/strutturale | TODO | Mocked | - | Gate incompleti | Basso | - | Eseguire quality completo |
+| Documentazione | C | Allineamento finale documentazione | TODO | Transfer | - | Drift tra file | Medio | - | Review link e coerenza |
 
 ## Decisioni chiave
 
@@ -20,7 +20,9 @@
 
 ## Rischi aperti
 
--
+- confusione tra mock didattico e runtime enterprise
+- introduzione accidentale di dipendenze auth non in scope
+- mancata distinzione tra output concettuale e implementazione mock
 
 ## Correzioni applicate
 

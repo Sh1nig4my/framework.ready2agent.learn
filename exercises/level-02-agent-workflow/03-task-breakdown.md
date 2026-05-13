@@ -25,5 +25,19 @@ Task monolitici.
 Inserisci task principali e stato.
 ## Variante avanzata
 Aggiungi stima rischio/complessita.
+
+## Checklist di completamento
+
+- [ ] task piccoli con 1 obiettivo ciascuno
+- [ ] dipendenze esplicite
+- [ ] DoD verificabile per ogni task
+- [ ] scorecard compilata
+
+## Rubrica e scorecard
+
+- Rubrica standard: `exercises/rubrics/standard-rubric.md`
+- Scorecard: `exercises/rubrics/scorecard-template.md`
+- Retrospettiva: `exercises/templates/retrospective-template.md`
+- Esempi: `exercises/examples/README.md`
 ## Prossimo esercizio consigliato
 `04-build-workflow-tracker.md`

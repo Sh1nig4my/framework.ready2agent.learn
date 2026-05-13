@@ -7,12 +7,13 @@ export default function WikiWorkflowPage() {
     <WikiPageShell
       currentPath="/wiki/workflow"
       title="Workflow"
-      description="Il workflow e la memoria operativa del progetto: tiene insieme fasi, decisioni, rischi e stato reale del lavoro."
-      purpose="Mantenere coerenza tra requirement, task, implementazione e documentazione lungo tutto il ciclo di sviluppo."
-      whenToUse="Usala quando il task non e banale e hai bisogno di tracciare passaggi, dipendenze e responsabilita."
-      learningOutcome="Capirai come evitare il lavoro a blocchi isolati e costruire progressione solida tra analisi, build e validazione."
-      commonMistake="Trattare il workflow come burocrazia: senza tracking, ogni iterazione perde contesto e ripete errori gia noti."
+      description="Il workflow e la memoria operativa dopo playground e prompts: tiene insieme fasi, decisioni, rischi e stato reale del lavoro."
+      purpose="Mantenere coerenza tra requirement, task, implementazione e documentazione, con tracker aggiornati e passaggi verificabili."
+      whenToUse="Apri questa pagina quando passi dai prompt 00-06 a un'esecuzione multi-step e devi tracciare dipendenze, stato e correzioni."
+      learningOutcome="Capirai come trasformare output isolati in progressione continua, evitando drift tra analisi, build, quality gate e docs."
+      commonMistake="Saltare tracker e aggiornamenti: perdi memoria operativa e ripeti errori gia risolti."
       sourceLinks={[
+        { label: "Prompts hub", href: `${base}prompts/README.md` },
         { label: "Workflow hub", href: `${base}workflow/README.md` },
         { label: "Tracker Auth/IAM", href: `${base}workflow/trackers/auth-iam-case-study-tracker.md` },
       ]}

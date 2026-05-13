@@ -1,54 +1,89 @@
 # Prompt 00 - Agent Onboarding
 
-## A cosa serve
+## Purpose
 
-Serve a far partire l'agente con il contesto corretto prima di toccare il codice.
+Allineare l'agente al contesto corretto prima di qualsiasi modifica, evitando avvio fuori scope o senza source-of-truth.
 
-## Quando usarlo
+## When to use
 
-- inizio di una nuova sessione
-- cambio di area funzionale
-- task complesso con molte dipendenze
+- inizio nuova sessione
+- passaggio a nuova area del repository
+- task con vincoli multipli o rischio drift
 
-## File da leggere prima
+## Required context
 
+- `AGENTS.md`
 - `README.md`
 - `documentation/R2A_LEARN_full-ai-context.md`
 - `documentation/quickstart/agent_start_here.md`
+- `prompts/README.md`
 - `workflow/README.md`
-- requirement master del caso studio
+- `workflow/requirements/r2a-learn-auth-iam-case-study/00-master-requirement.md` (se il task riguarda il case study)
 
-## Prompt da copiare nell'agente
+## Role
 
-```text
-Agisci come coding agent su Ready2Agent Learn.
-Prima di modificare file, leggi i documenti source-of-truth del repository.
-Non implementare nulla in questa fase.
+Agisci come coding agent su Ready2Agent Learn con disciplina didattica, confini espliciti e priorita alla verificabilita.
 
-Output richiesto:
-1) scope compreso
-2) confini (in-scope / out-of-scope)
-3) rischi principali
-4) piano operativo in step
-```
+## Task
 
-## Output atteso
+Leggi i source-of-truth richiesti e produci una lettura operativa del task. Non implementare codice in questa fase.
 
-- piano operativo iniziale
-- elenco file chiave
-- rischi e assunzioni
+## Inputs
 
-## Checklist per l'umano
+- richiesta utente corrente
+- area/file potenzialmente coinvolti
+- eventuale requirement di riferimento
 
-- l'agente cita i file letti
-- dichiara vincoli Learn
-- non propone implementazioni fuori scope
+## Output contract
 
-## Errori comuni
+Restituisci prima di ogni modifica:
 
-- saltare la lettura del full context
-- partire subito con codice
+1. sintesi del contesto compreso
+2. in-scope
+3. out-of-scope
+4. rischi principali
+5. file candidati da toccare
+6. piano operativo in fasi
+7. ordine consigliato degli interventi
+8. criteri di successo
+9. quality gate da eseguire
+10. stop conditions
 
-## Passaggio successivo
+## Quality bar
+
+- cita esplicitamente i source-of-truth letti
+- separa chiaramente in-scope e out-of-scope
+- usa piano incrementale, non refactor massivo
+- allinea il piano ai gate reali del repository
+
+## Anti-drift rules
+
+- non partire dal codice prima del piano
+- non introdurre backend, DB o auth production-ready
+- non proporre feature non richieste
+- non confondere wiki di navigazione con source-of-truth markdown
+
+## Stop conditions
+
+Fermati e chiedi chiarimento solo se:
+
+- la richiesta e ambigua in modo materiale
+- manca un input essenziale non inferibile
+- il task implica azioni distruttive/irreversibili non richieste
+
+## Self-check
+
+- ho letto tutti i source-of-truth minimi?
+- il piano e verificabile e sequenziale?
+- ho dichiarato rischi e assunzioni concrete?
+- ho evitato proposte enterprise fuori scope?
+
+## Human review checklist
+
+- l'output contiene tutti i punti del contratto
+- i confini Learn sono rispettati
+- le stop conditions sono realistiche
+
+## Next step
 
 Usa `01-requirement-analysis.md`.

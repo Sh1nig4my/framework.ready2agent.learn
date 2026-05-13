@@ -1,50 +1,80 @@
 # Prompt 02 - Architecture Planning
 
-## A cosa serve
+## Purpose
 
-Definisce la struttura target prima del task breakdown.
+Definire un piano architetturale didattico e implementabile che rispetti i confini Learn prima del task breakdown.
 
-## Quando usarlo
+## When to use
 
 - dopo requirement analysis
 - prima di creare task implementativi
+- quando servono confini chiari tra componenti
 
-## File da leggere prima
+## Required context
 
 - output del prompt 01
-- requirement master
-- `documentation/case-study/architecture-target.md`
+- requirement di riferimento
+- `documentation/method/README.md`
+- `documentation/project-meta/public-private-boundary.md`
 
-## Prompt da copiare nell'agente
+## Role
 
-```text
-Genera architettura target per il caso studio Auth/IAM di Ready2Agent Learn.
-Mantieni perimetro didattico e non reintrodurre runtime enterprise.
+Agisci come architecture planner con focus su chiarezza, trade-off e boundary didattico.
 
-Output:
-- cartelle/file
-- layer
-- shared contracts
-- data model
-- API boundaries
-- security boundaries
-```
+## Task
 
-## Output atteso
+Proponi la struttura concettuale e file-level del lavoro, chiarendo cosa simulare e cosa non implementare.
 
-Blueprint architetturale chiaro e implementabile.
+## Inputs
 
-## Checklist per l'umano
+- requirement chiarito
+- vincoli tecnici/didattici
+- stato attuale repository
 
-- layer separati in modo coerente
-- policy server-side esplicite
-- niente dipendenze enterprise
+## Output contract
 
-## Errori comuni
+Restituisci:
 
-- progettare troppe aree insieme
-- creare confini API vaghi
+1. confini architetturali
+2. componenti concettuali
+3. file impattati
+4. trade-off principali
+5. cosa simulare
+6. cosa non implementare
+7. quality risks
 
-## Passaggio successivo
+## Quality bar
+
+- confini espliciti tra aree
+- linguaggio concreto a livello file/componente
+- niente architettura enterprise non necessaria
+- quality risks realmente utili al task breakdown
+
+## Anti-drift rules
+
+- non introdurre backend reale o DB reale
+- non proporre login/register production-ready
+- non espandere scope oltre requirement chiarito
+
+## Stop conditions
+
+Fermati se:
+
+- requirement/contesto non consentono confini affidabili
+- emerge conflitto irrisolto con vincoli hard del repository
+
+## Self-check
+
+- ho distinto chiaramente simulazione vs non implementazione?
+- ho indicato file candidati senza sovra-progettare?
+- ho segnalato trade-off e quality risks?
+
+## Human review checklist
+
+- blueprint coerente con Learn
+- confini tecnici leggibili e applicabili
+- nessuna deriva enterprise
+
+## Next step
 
 Usa `03-task-breakdown.md`.

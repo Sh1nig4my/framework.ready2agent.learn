@@ -1,22 +1,22 @@
 # Business Context to Agent Prompt
 
-## Quando usarlo
+## Input confuso
 
-Quando il contesto business e chiaro ma il prompt operativo e debole.
+"L'obiettivo business e chiaro, ma l'agente continua a fare cose non richieste."
 
-## Cosa ottieni
+## Prompt debole
 
-Un prompt robusto con ruolo, input, output, vincoli, controlli.
+```text
+Scrivi un prompt migliore per il nostro task.
+```
 
-## Input richiesti
+## Output mediocre
 
-- obiettivo business
-- target utente
-- KPI o risultato atteso
-- vincoli operativi
-- rischi principali
+- ruolo non definito
+- output atteso ambiguo
+- assenza di vincoli anti-drift
 
-## Prompt pronto da copiare
+## Prompt migliorato (Ready2Agent)
 
 ```text
 Agisci come orchestratore agent-native per un task software.
@@ -28,7 +28,7 @@ Contesto business:
 - Vincoli: <...>
 - Rischi: <...>
 
-Produci un prompt pronto per un coding agent con sezioni obbligatorie:
+Produci un prompt pronto per coding agent con sezioni:
 1) Ruolo agente.
 2) Task specifico.
 3) Input disponibili.
@@ -38,28 +38,32 @@ Produci un prompt pronto per un coding agent con sezioni obbligatorie:
 7) Formato output finale richiesto.
 
 Vincoli:
-- Niente richieste vaghe (es. "fai meglio").
+- Niente richieste vaghe.
 - Niente obiettivi non verificabili.
 - Inserisci anche cosa NON fare.
 ```
 
-## Output atteso
+## Output buono/eccellente
 
-Prompt operativo completo, pronto da usare in Codex/OpenCode.
+- prompt completo e incollabile
+- confini e non-obiettivi espliciti
+- riduzione del rischio drift
 
-## Come valutare il risultato
+## Perche migliora
 
-- sono espliciti confini e non-obiettivi?
-- output e quality check sono verificabili?
-- il prompt riduce la probabilita di drift?
+- passa da desiderio a contratto operativo
+- chiarisce controllo qualita e formato output
+- facilita review umana
 
-## Variante avanzata
+## Checklist validazione
 
-Genera il prompt in due versioni:
+- ruolo/task/input/output espliciti
+- quality check verificabili
+- presenza di non-obiettivi
+- riduzione drift plausibile
 
-- versione per junior team
-- versione per team esperto
+## Collegamenti utili
 
-## Prossimo step consigliato
-
-Applica il prompt su un esercizio livello 2 in `exercises/level-02-agent-workflow/`.
+- First Mission: `documentation/first-mission/README.md`
+- Prompt consigliato: `prompts/04-implementation-start.md`
+- Next step: `exercises/level-02-agent-workflow/02-fix-prompt-drift.md`

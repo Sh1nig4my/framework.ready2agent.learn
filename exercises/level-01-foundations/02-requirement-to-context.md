@@ -56,6 +56,20 @@ Registra decisioni e rischi aperti.
 
 Crea due context pack: junior team e expert team.
 
+## Checklist di completamento
+
+- [ ] context pack con file reali del repository
+- [ ] vincoli e non-obiettivi espliciti
+- [ ] quality gate previsti
+- [ ] scorecard compilata
+
+## Rubrica e scorecard
+
+- Rubrica standard: `exercises/rubrics/standard-rubric.md`
+- Scorecard: `exercises/rubrics/scorecard-template.md`
+- Retrospettiva: `exercises/templates/retrospective-template.md`
+- Esempi: `exercises/examples/README.md`
+
 ## Prossimo esercizio consigliato
 
 `exercises/level-01-foundations/03-context-to-prompt.md`

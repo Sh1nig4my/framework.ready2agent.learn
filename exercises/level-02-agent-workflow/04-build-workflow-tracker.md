@@ -25,5 +25,19 @@ Tracker troppo verboso.
 Compila almeno 3 righe reali.
 ## Variante avanzata
 Aggiungi colonna ownership.
+
+## Checklist di completamento
+
+- [ ] tracker con stato, rischi, gate e next step
+- [ ] almeno 3 righe compilate
+- [ ] formato leggibile e aggiornabile
+- [ ] scorecard compilata
+
+## Rubrica e scorecard
+
+- Rubrica standard: `exercises/rubrics/standard-rubric.md`
+- Scorecard: `exercises/rubrics/scorecard-template.md`
+- Retrospettiva: `exercises/templates/retrospective-template.md`
+- Esempi: `exercises/examples/README.md`
 ## Prossimo esercizio consigliato
 `05-define-quality-gate.md`

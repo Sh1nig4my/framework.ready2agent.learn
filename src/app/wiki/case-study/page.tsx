@@ -7,11 +7,11 @@ export default function WikiCaseStudyPage() {
     <WikiPageShell
       currentPath="/wiki/case-study"
       title="Case study Auth/IAM"
-      description="Il case study Auth/IAM e la prova completa del laboratorio: ruoli, permessi e policy in un percorso guidato multi-fase."
-      purpose="Farti applicare il metodo su una sfida realistica, mantenendo sempre confini didattici e verificabilita."
-      whenToUse="Usala quando hai gia basi solide e vuoi allenarti su un flusso end-to-end con livello di complessita maggiore."
-      learningOutcome="Imparerai a gestire dipendenze tra requirement, sicurezza, task breakdown e quality gate senza uscire dal perimetro Learn."
-      commonMistake="Trattarlo come progetto enterprise reale: qui l'obiettivo e imparare il processo, non consegnare un runtime privato."
+      description="Il case study Auth/IAM segue tre livelli espliciti: A concettuale, B mocked implementation, C transfer concettuale verso runtime privato."
+      purpose="Farti applicare il metodo su una sfida realistica mantenendo confini didattici, output verificabili e anti-deriva enterprise."
+      whenToUse="Usala dopo First Mission e Prompt System, quando vuoi esercitarti su un percorso multi-fase con tracking rigoroso."
+      learningOutcome="Imparerai a distinguere cosa progettare, cosa simulare e cosa non implementare nel repository Learn."
+      commonMistake="Confondere Level B con produzione reale: in Learn si simula il comportamento, non si consegna un runtime enterprise."
       sourceLinks={[
         {
           label: "Master requirement Auth/IAM",
