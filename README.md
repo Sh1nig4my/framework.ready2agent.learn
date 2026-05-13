@@ -1,6 +1,6 @@
 # Ready2Agent Learn
 
-Versione corrente: **v1.2.2 — Guided Wiki & Agent-Safe Navigation** (versione centralizzata in `documentation/product-manifest.json`).
+Versione corrente: **VERSION: v1.2.2** — Guided Wiki & Agent-Safe Navigation (fonte unica: `documentation/product-manifest.json`).
 
 ## In una frase
 
@@ -148,7 +148,7 @@ Se l'output non e verificabile, il task non e finito.
 
 ## Cosa NON e
 
-Ready2Agent Learn v1.2.2:
+Ready2Agent Learn **VERSION: v1.2.2**:
 
 - non e un backend framework enterprise pronto
 - non include database reale

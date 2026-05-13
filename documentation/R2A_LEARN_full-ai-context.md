@@ -118,7 +118,7 @@ Quando una richiesta e ambigua ma non bloccante, scegliere il default piu conser
 6. `workflow/requirements/r2a-learn-auth-iam-case-study/00-master-requirement.md`
 7. file sorgente coinvolti
 
-## Navigazione v1.2.2
+## Navigazione (VERSION: v1.2.2)
 
 - homepage: orientamento rapido
 - wiki: `/wiki` e sottopagine guidate

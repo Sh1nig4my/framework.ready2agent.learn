@@ -36,6 +36,7 @@ const required = [
   "prompts/05-quality-gate.md",
   "prompts/06-documentation-alignment.md",
   "src/app/page.tsx",
+  "src/content/version.ts",
   "src/content/public-site.ts",
   "src/content/paths.ts",
   "src/app/wiki/page.tsx",
